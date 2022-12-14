@@ -1,0 +1,40 @@
+.login-wrap {
+	.remember-me {
+		margin-top: -1px;
+		float: left;
+	}
+
+	.forgot-password {
+		margin-top: -1px;
+		color: $color-gray;
+		float: right;
+
+		&:hover {
+			color: $color-default;
+            color: var(--color-primary);
+		}
+	}
+
+	.btn-sign-in {
+        margin-top: 34px;
+    }
+
+    .btn-create-account {
+        margin-top: 12px;
+    }
+}
+
+@media screen and (max-width: 380px) {
+	.login-wrap {
+		.remember-me,
+		.forgot-password {
+			display: block;
+			text-align: center;
+			float: none;
+		}
+
+		.forgot-password {
+			margin-top: 4px;
+		}
+	}
+}

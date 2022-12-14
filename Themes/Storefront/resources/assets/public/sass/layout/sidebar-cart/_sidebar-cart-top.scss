@@ -1,0 +1,29 @@
+.sidebar-cart-top {
+    display: flex;
+    padding: 15px 30px;
+    align-items: center;
+    justify-content: space-between;
+    background: $color-default;
+    background: var(--color-primary);
+
+    .title {
+        font-weight: 400;
+        color: $color-white;
+    }
+
+    .sidebar-cart-close {
+        display: flex;
+        cursor: pointer;
+        opacity: 0.8;
+        transition: $transition-default;
+
+        &:hover {
+            opacity: 1;
+        }
+
+        > i {
+            font-size: 18px;
+            color: $color-white;
+        }
+    }
+}

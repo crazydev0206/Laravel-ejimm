@@ -1,0 +1,25 @@
+.order-summary-bottom {
+    .checkout-terms-and-conditions {
+        margin: -1px 0 0;
+        padding-bottom: 17px;
+        text-align: center;
+
+        .error-message {
+            margin: -2px 0 8px;
+        }
+    }
+
+    .btn {
+        width: 100%;
+    }
+}
+
+#paypal-button-container {
+    .paypal-buttons {
+        vertical-align: top;
+
+        iframe.component-frame {
+            z-index: 0;
+        }
+    }
+}

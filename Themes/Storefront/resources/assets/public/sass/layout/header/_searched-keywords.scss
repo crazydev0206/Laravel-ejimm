@@ -1,0 +1,62 @@
+.header-search {
+    .searched-keywords {
+        display: flex;
+        width: 95%;
+        margin: 14px auto -9px;
+        justify-content: center;
+
+        > label {
+            font-size: 14px;
+            line-height: 26px;
+            margin-bottom: 0;
+            color: $color-default;
+            color: var(--color-primary);
+            white-space: nowrap;
+        }
+    }
+
+    .searched-keywords-list {
+        height: 26px;
+        overflow: hidden;
+
+        li {
+            font-size: 14px;
+            line-height: 26px;
+            position: relative;
+            display: inline-block;
+            padding: 0 15px;
+
+            &:after {
+                position: absolute;
+                content: '';
+                left: -1px;
+                top: 4px;
+                height: 16px;
+                width: 1px;
+                background: $color-gray-dark;
+            }
+
+            &:first-child:after {
+                height: 0;
+                width: 0;
+            }
+
+            a {
+                color: $color-gray-dark;
+
+                &:hover {
+                    color: $color-default;
+                    color: var(--color-primary);
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: $lg) {
+    .header-search {
+        .searched-keywords {
+            display: none;
+        }
+    }
+}

@@ -1,0 +1,214 @@
+.form-group {
+	margin-bottom: 20px;
+
+	label {
+		font-weight: 500;
+		margin-bottom: 9px;
+
+		> span {
+			margin-left: 4px;
+			color: $color-red;
+		}
+	}
+}
+
+.form-control {
+    font-size: 14px;
+	height: 45px;
+    padding: 10px 15px;
+	border-color: $color-gray-lite;
+    border-radius: $radius-default;
+	transition: $transition-default;
+
+    &:focus {
+        border-color: $color-default;
+        border-color: var(--color-primary);
+        box-shadow: none;
+    }
+}
+
+select {
+    border: none;
+
+    &.arrow-black {
+        background-position: right 10px center;
+    }
+}
+
+textarea {
+    &.form-control {
+        transition: border $transition-default, resize 0ms;
+    }
+}
+
+.form-check {
+	padding: 0;
+
+    label {
+        font-weight: 400;
+        color: $color-gray;
+    }
+
+    input[type="checkbox"] {
+        position: absolute;
+        left: 0;
+        margin: 0;
+        display: none;
+
+        &:checked + label,
+        &:not(:checked) + label {
+            position: relative;
+            padding-left: 28px;
+            cursor: pointer;
+            display: inline-block;
+            text-align: left;
+        }
+
+        &:checked + label:before,
+        &:not(:checked) + label:before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 1px;
+            width: 18px;
+            height: 17px;
+            border: 1px solid $border-color;
+            border-radius: $radius-default;
+            transition: $transition-default;
+        }
+
+        &:checked + label:after,
+        &:not(:checked) + label:after {
+            position: absolute;
+            content: '';
+            top: 5px;
+            left: 4px;
+            height: 6px;
+            width: 10px;
+            border: 2px solid;
+            border-color: $color-default;
+            border-color: var(--color-primary);
+            /*rtl:begin:ignore*/
+  			border-top: none;
+  			border-right: none;
+  			transform: rotate(-45deg) scale(0);
+            /*rtl:end:ignore*/
+            transition: $transition-default;
+        }
+
+        &:not(:checked) + label:after {
+            opacity: 0;
+            transform: rotate(-45deg) scale(0) #{'/*rtl:ignore*/'};
+        }
+
+        &:checked + label:after {
+            opacity: 1;
+            transform: rotate(-45deg) scale(1) #{'/*rtl:ignore*/'};
+        }
+    }
+}
+
+.form-radio {
+    padding: 0;
+
+    label {
+        font-weight: 400;
+        color: $color-gray;
+    }
+
+    input[type="radio"] {
+        position: absolute;
+        left: 0;
+        margin: 0;
+        display: none;
+
+        &:checked + label,
+        &:not(:checked) + label {
+            position: relative;
+            padding-left: 28px;
+            cursor: pointer;
+            display: inline-block;
+            text-align: left;
+        }
+
+        &:checked + label:before,
+        &:not(:checked) + label:before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 2px;
+            width: 17px;
+            height: 17px;
+            border: 1px solid $border-color;
+            border-radius: 50%;
+            transition: $transition-default;
+        }
+
+        &:checked + label:after,
+        &:not(:checked) + label:after {
+            position: absolute;
+            content: '';
+            top: 7px;
+            left: 5px;
+            height: 7px;
+            width: 7px;
+            background: $color-default;
+            background: var(--color-primary);
+            border-radius: 50%;
+            transform: scale(0);
+            transition: $transition-default;
+        }
+
+        &:not(:checked) + label:after {
+            opacity: 0;
+            transform: scale(0);
+        }
+
+        &:checked + label:after {
+            opacity: 1;
+            transform: scale(1);
+        }
+    }
+}
+
+.form-check-label {
+    > a {
+        color: $color-default;
+        color: var(--color-primary);
+
+        &:hover {
+            color: $color-default-hover;
+            color: var(--color-primary-hover);
+        }
+    }
+}
+
+.has-error {
+	.form-control {
+		border-color: $color-red;
+
+		&:focus {
+			border-color: $color-red;
+		}
+	}
+}
+
+.error-message {
+    line-height: 20px;
+	display: block;
+	margin: 4px 0 -5px;
+	color: $color-red;
+}
+
+::placeholder {
+    color: $color-gray-dark !important;
+    opacity: 1;
+}
+
+:-ms-input-placeholder {
+    color: $color-gray-dark !important;
+}
+
+::-ms-input-placeholder {
+    color: $color-gray-dark !important;
+}

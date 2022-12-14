@@ -1,0 +1,14 @@
+@push('shortcuts')
+    <dl class="dl-horizontal">
+        <dt><code>b</code></dt>
+        <dd>{{ trans('admin::admin.shortcuts.back_to_index', ['name' => trans('$LOWERCASE_MODULE_NAME$::$PLURAL_SNAKE_CASE_ENTITY_NAME$.$SNAKE_CASE_ENTITY_NAME$')]) }}</dd>
+    </dl>
+@endpush
+
+@push('scripts')
+    <script>
+        keypressAction([
+            { key: 'b', route: "{{ route('admin.$PLURAL_SNAKE_CASE_ENTITY_NAME$.index') }}" }
+        ]);
+    </script>
+@endpush

@@ -1,0 +1,42 @@
+.landscape-products-wrap {
+	margin-top: 45px;
+
+	.products-header {
+		border-bottom: 1px solid $border-color-lite;
+	}
+
+    .section-title {
+        padding-bottom: 14px;
+    }
+}
+
+.landscape-products {
+	.arrow-prev.slick-arrow,
+    .arrow-next.slick-arrow {
+        top: -40px;
+    }
+
+	.slick-list {
+        margin: 0 -15px -50px;
+        padding: 30px 0 50px;
+
+        .slick-track {
+            display: flex;
+            align-items: stretch;
+        }
+    }
+
+    .slick-dots {
+        position: relative;
+        bottom: auto;
+        margin-top: 30px;
+    }
+}
+
+@media screen and (max-width: $lg) {
+    .landscape-products {
+        .slick-list {
+            margin: 0 -8px -50px;
+        }
+    }
+}

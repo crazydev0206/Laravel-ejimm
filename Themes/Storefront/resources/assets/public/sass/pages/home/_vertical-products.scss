@@ -1,0 +1,212 @@
+.vertical-products-wrap {
+    margin-top: 44px;
+}
+
+.daily-deals-wrap {
+    .daily-deals-header {
+        margin-bottom: 30px;
+        border-bottom: 1px solid $border-color-lite;
+    }
+
+    .section-title {
+        font-weight: 400;
+        padding-bottom: 13px;
+
+        b {
+            color: $color-default;
+            color: var(--color-primary);
+        }
+    }
+}
+
+.daily-deals {
+    border-radius: $radius-default;
+    border: 1px solid $color-gray-lite;
+
+    .arrow-prev.slick-arrow,
+    .arrow-next.slick-arrow {
+        bottom: 15px;
+    }
+
+    .arrow-prev {
+        left: 36px;
+        right: auto;
+    }
+
+    .arrow-next {
+        right: 36px;
+    }
+
+    .daily-deals-inner {
+        padding: 20px 40px 40px;
+    }
+
+    .product-image {
+        height: 320px;
+        margin-bottom: 14px;
+        overflow: hidden;
+
+        .image-placeholder {
+            height: 100px;
+            width: 100px;
+        }
+    }
+
+    .product-name {
+        display: block;
+        margin-bottom: 23px;
+        color: $color-black;
+
+        &:hover {
+            h6 {
+                color: $color-default;
+                color: var(--color-primary);
+            }
+        }
+
+        h6 {
+            font-weight: 400;
+            line-height: 24px;
+            max-height: 48px;
+            display: block;
+            display: -webkit-box;
+            text-align: center;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            transition: $transition-default;
+        }
+    }
+
+    .product-info {
+        display: flex;
+        margin-bottom: 25px;
+        padding: 10px 0 8px;
+        align-items: center;
+        justify-content: space-between;
+        border-top: 1px solid $color-gray-lite;
+        border-bottom: 1px solid $color-gray-lite;
+    }
+
+    .product-rating {
+        .rating-count {
+            font-size: 12px;
+            margin-top: 2px;
+        }
+    }
+
+    .daily-deals-countdown.is-countdown {
+        margin-bottom: 12px;
+
+        .countdown-amount {
+            height: 40px;
+            width: 40px;
+            background: $color-white-lite;
+        }
+
+        .countdown-section {
+            margin-right: 15px;
+
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+    }
+
+    .deal-progress {
+        margin-bottom: 21px;
+
+        .deal-stock {
+            display: flex;
+            margin-bottom: 3px;
+            justify-content: space-between;
+        }
+
+        .stock-available,
+        .stock-sold {
+            font-size: 12px;
+            line-height: 22px;
+            color: $color-gray-dark;
+
+            > span {
+                color: $color-black;
+            }
+        }
+
+        .progress {
+            height: 10px;
+            background: $color-gray-lite;
+            border-radius: $radius-default;
+
+            .progress-bar {
+                background: $color-default;
+                background: var(--color-primary);
+            }
+        }
+    }
+}
+
+@media screen and (max-width: $xl) {
+    .vertical-products-wrap {
+        .row {
+            > div:not(:first-child) {
+                .vertical-products {
+                    margin-top: 44px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .vertical-products-wrap {
+        .vertical-products {
+            .vertical-products-header {
+                margin-bottom: 30px;
+            }
+
+            .vertical-product-card {
+                margin-bottom: 34px;
+
+                &:last-child {
+                    margin-bottom: 0;
+                }
+
+                .product-name {
+                    margin-bottom: 12px;
+
+                    h6 {
+                        line-height: 24px;
+                        max-height: 48px;
+                    }
+                }
+
+                .product-price {
+                    margin-bottom: 9px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: $sm) {
+    .daily-deals {
+        .daily-deals-inner {
+            padding: 20px 30px 40px;
+        }
+
+        .product-image {
+            position: relative;
+            height: auto;
+            padding-bottom: 80%;
+
+            > img {
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%);
+            }
+        }
+    }
+}

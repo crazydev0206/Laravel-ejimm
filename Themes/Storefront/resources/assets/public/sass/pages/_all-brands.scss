@@ -1,0 +1,69 @@
+.all-brands-wrap {
+    margin-top: 50px;
+}
+
+.all-brands {
+    .all-brands-inner {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 -15px -30px;
+    }
+
+    .brand-image {
+        position: relative;
+        display: block;
+        margin-bottom: 30px;
+        padding-bottom: 70%;
+        border: 1px solid $color-gray-lite;
+        border-radius: $radius-default;
+        overflow: hidden;
+        transition: $transition-default;
+
+        &:hover {
+            border-color: $color-default-transparent-lite;
+            border-color: var(--color-primary-transparent-lite);
+
+            > img {
+                opacity: 0.7;
+            }
+        }
+
+        > img {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            max-height: 100%;
+            max-width: 100%;
+            transform: translate(-50%, -50%);
+            transition: $transition-default;
+        }
+
+        .image-placeholder {
+            height: 65px;
+            width: 65px;
+        }
+    }
+
+    .empty-message {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        padding: 40px 0;
+
+        svg {
+            height: 100px;
+            width: 100px;
+            margin-bottom: 22px;
+
+            path {
+                stroke: $color-white;
+                stroke-miterlimit: 10;
+                stroke-width: 5px;
+                fill: $color-default;
+                fill: var(--color-primary);
+            }
+        }
+    }
+}

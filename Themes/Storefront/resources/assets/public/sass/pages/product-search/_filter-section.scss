@@ -1,0 +1,206 @@
+.filter-section-wrap {
+    background: $color-white;
+
+    .filter-section-header {
+        > i {
+            display: none;
+        }
+    }
+
+    .filter-section-inner {
+        &.custom-scrollbar {
+            overflow-y: visible;
+        }
+    }
+}
+
+.filter-section {
+    margin-bottom: 33px;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+
+    > h6 {
+        font-size: 16px;
+        margin-bottom: 15px;
+    }
+
+    .btn-show-more {
+        display: inline-flex;
+        margin: 6px 0 9px;
+        color: $color-gray;
+        cursor: pointer;
+        transition: $transition-default;
+
+        &:hover {
+            color: $color-default;
+            color: var(--color-primary);
+        }
+    }
+}
+
+.filter-price {
+    padding-bottom: 15px;
+
+    .price-input {
+        display: flex;
+
+        > .form-group {
+            &:first-child {
+                position: relative;
+                margin-right: 15px;
+
+                &:after {
+                    content: "-";
+                    font-size: 20px;
+                    position: absolute;
+                    top: 50%;
+                    right: -20px;
+                    transform: translateY(-50%);
+                }
+            }
+
+            &:last-child {
+                margin-left: 15px;
+            }
+        }
+
+        .form-control {
+            height: 40px;
+        }
+    }
+
+    .noUi-horizontal {
+        height: 3px;
+
+        .noUi-handle {
+            top: -6px;
+            right: -7px #{'/*rtl:ignore*/'};
+            height: 14px;
+            width: 14px;
+        }
+    }
+
+    .noUi-target {
+        background: $border-color-lite;
+        border: none;
+        box-shadow: none;
+    }
+
+    .noUi-connect {
+        background: $color-default;
+        background: var(--color-primary);
+    }
+
+    .noUi-connect,
+    .noUi-origin {
+        transform-origin: 0 100% #{'/*rtl:ignore*/'};
+    }
+
+    .noUi-handle {
+        border: none;
+        background: $color-default-transparent-lite;
+        background: var(--color-primary-transparent-lite);
+        border-radius: 50%;
+        box-shadow: none;
+        cursor: ew-resize;
+
+        &:before {
+            content: none;
+        }
+
+        &:after {
+            left: 3px;
+            top: 3px;
+            height: 8px;
+            width: 8px;
+            background: $color-default;
+            background: var(--color-primary);
+            border-radius: 50%;
+        }
+    }
+}
+
+.filter-checkbox {
+    .form-check {
+        margin-bottom: 4px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+        > label {
+            line-height: 24px;
+        }
+    }
+}
+
+@media screen and (max-width: $lg) {
+    .filter-section-wrap {
+        position: fixed;
+        left: -165px;
+        top: 0;
+        bottom: 0;
+        width: 300px;
+        box-shadow: 2.5px 4.33px 40px 5px rgba(12, 31, 46, 0.1);
+        opacity: 0;
+        visibility: hidden;
+        z-index: 200;
+        transition: $transition-primary;
+
+        &.active {
+            left: 0;
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .filter-section-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 24px;
+            padding: 15px 20px;
+            background: $color-default;
+            background: var(--color-primary);
+
+            > i {
+                display: block;
+                color: $color-white;
+                opacity: 0.8;
+                cursor: pointer;
+                transition: $transition-default;
+
+                &:hover {
+                    opacity: 1;
+                }
+            }
+        }
+
+        .section-title {
+            font-weight: 400;
+            margin-bottom: 0;
+            padding-bottom: 0;
+            color: $color-white;
+            border-bottom: none;
+
+            &:after {
+                content: none;
+            }
+        }
+
+        .filter-section-inner {
+            position: absolute;
+            left: 0;
+            top: 58px;
+            right: 0;
+            bottom: 0;
+            padding: 23px 20px 15px;
+
+            &.custom-scrollbar {
+                overflow-x: hidden;
+                overflow-y: auto;
+            }
+        }
+    }
+}

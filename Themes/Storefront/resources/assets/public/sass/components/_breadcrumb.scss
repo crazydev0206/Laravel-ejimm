@@ -1,0 +1,51 @@
+.breadcrumb {
+	margin: 23px 0 0;
+	padding: 0;
+	background: $color-white;
+
+	ul {
+		margin-left: -11px;
+
+		> li {
+			font-size: 15px;
+			line-height: 26px;
+			position: relative;
+			display: inline-block;
+			padding: 0 10px;
+
+			&:after {
+				position: absolute;
+				content: '\f105';
+				font-family: 'Line Awesome Free';
+				font-weight: 900;
+				font-size: 12px;
+				right: -7px;
+				top: 1px;
+				color: $color-black;
+			}
+
+			&:last-child {
+				&:after {
+					content: '';
+				}
+			}
+
+			&.active {
+				color: $color-gray-dark;
+
+				&:after {
+					color: $color-gray-dark;
+				}
+			}
+
+			> a {
+				color: $color-black;
+
+				&:hover {
+					color: $color-default;
+                    color: var(--color-primary);
+				}
+			}
+		}
+	}
+}

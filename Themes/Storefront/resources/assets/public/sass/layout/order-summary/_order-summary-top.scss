@@ -1,0 +1,39 @@
+.order-summary-top {
+    .section-title {
+        padding-bottom: 18px;
+        border-bottom: 1px solid $border-color-lite;
+    }
+
+    .cart-item {
+        padding: 25px 0 24px;
+        border-bottom: 1px solid $color-gray-lite;
+
+        li {
+            display: flex;
+            margin-bottom: 9px;
+            justify-content: space-between;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+
+        label {
+            margin-bottom: 0;
+            padding-right: 20px;
+        }
+
+        .product-name {
+            color: $color-black;
+
+            &:hover {
+                color: $color-default;
+                color: var(--color-primary);
+            }
+        }
+
+        .product-quantity {
+            font-weight: 500;
+        }
+    }
+}

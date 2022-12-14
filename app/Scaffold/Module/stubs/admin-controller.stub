@@ -1,0 +1,41 @@
+<?php
+
+namespace Modules\$MODULE_NAME$\Http\Controllers\Admin;
+
+use Illuminate\Routing\Controller;
+use Modules\Admin\Traits\HasCrudActions;
+use Modules\$MODULE_NAME$\Entities\$ENTITY_NAME$;
+use Modules\$MODULE_NAME$\Http\Requests\Save$ENTITY_NAME$Request;
+
+class $ENTITY_NAME$Controller extends Controller
+{
+    use HasCrudActions;
+
+    /**
+     * Model for the resource.
+     *
+     * @var string
+     */
+    protected $model = $ENTITY_NAME$::class;
+
+    /**
+     * Label of the resource.
+     *
+     * @var string
+     */
+    protected $label = '$LOWERCASE_MODULE_NAME$::$PLURAL_SNAKE_CASE_ENTITY_NAME$.$SNAKE_CASE_ENTITY_NAME$';
+
+    /**
+     * View path of the resource.
+     *
+     * @var string
+     */
+    protected $viewPath = '$LOWERCASE_MODULE_NAME$::admin.$PLURAL_SNAKE_CASE_ENTITY_NAME$';
+
+    /**
+     * Form requests for the resource.
+     *
+     * @var array
+     */
+    protected $validation = Save$ENTITY_NAME$Request::class;
+}

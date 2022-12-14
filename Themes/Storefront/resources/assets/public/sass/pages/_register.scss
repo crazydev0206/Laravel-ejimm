@@ -1,0 +1,19 @@
+.register-wrap {
+	.terms-and-conditions {
+		margin-top: -1px;
+	}
+
+	.form-group {
+		> img {
+			border-radius: $radius-default;
+		}
+	}
+
+	.btn-create-account {
+		margin-top: 34px;
+	}
+
+	.btn-sign-in {
+		margin-top: 12px;
+	}
+}

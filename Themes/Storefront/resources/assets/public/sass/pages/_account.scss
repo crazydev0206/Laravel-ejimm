@@ -1,0 +1,128 @@
+@import 'account/_my-orders',
+		'account/_my-downloads',
+		'account/_my-wishlist',
+		'account/_my-reviews',
+		'account/_my-addresses',
+		'account/_my-profile';
+
+%account-common-buttons {
+	display: inline-flex;
+	margin-top: -2px;
+	padding: 0;
+	letter-spacing: 2px;
+
+	&:hover {
+		color: $color-default;
+        color: var(--color-primary);
+	}
+
+	> i {
+		margin: 5px 10px 0 0;
+	}
+}
+
+.account-wrap {
+	margin-top: 42px;
+
+	.account-left {
+		min-width: 267px
+	}
+
+	.account-right {
+		width: 100%;
+		margin-left: 30px;
+		overflow: hidden;
+	}
+}
+
+.account-wrap-inner {
+	display: flex;
+}
+
+.account-sidebar {
+	li {
+		&.active {
+			a {
+				font-weight: 500;
+				color: $color-default;
+                color: var(--color-primary);
+
+				&:after {
+	                position: absolute;
+	                content: '';
+	                left: 0;
+	                top: 17px;
+	                height: 15px;
+	                width: 7px;
+	                background: $color-default;
+                    background: var(--color-primary);
+	                border-top-right-radius: 12px;
+	                border-bottom-right-radius: 12px;
+				}
+			}
+		}
+
+		a {
+			font-size: 16px;
+			line-height: 36px;
+			position: relative;
+			display: inline-block;
+			color: $color-black;
+			padding: 8px 0 8px 28px;
+
+			&:hover {
+				color: $color-default;
+                color: var(--color-primary);
+			}
+
+			> i {
+				font-size: 24px;
+				vertical-align: top;
+				margin-top: 5px;
+                margin: 5px 12px 0 0;
+                color: $color-gray;
+			}
+		}
+	}
+}
+
+.account-wrap {
+    .pagination {
+        margin: 17px -13px -15px 0;
+    }
+
+	.empty-message {
+		padding: 64px 15px 63px;
+		text-align: center;
+
+		> h3 {
+			font-weight: 400;
+		}
+	}
+}
+
+@media screen and (max-width: 1400px) {
+	.account-wrap {
+		.account-left {
+			min-width: 245px;
+		}
+	}
+}
+
+@media screen and (max-width: $lg) {
+	.account-wrap {
+        margin-top: 23px;
+
+		.account-left {
+			min-width: 0;
+		}
+
+		.account-right {
+			margin: 29px 0 0 0;
+		}
+	}
+
+	.account-wrap-inner {
+		flex-direction: column;
+	}
+}

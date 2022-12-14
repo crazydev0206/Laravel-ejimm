@@ -1,0 +1,60 @@
+.nice-select {
+    height: auto;
+    display: inline-block;
+    float: none;
+    border: none;
+
+    &:after {
+        border: none;
+    }
+
+    &.form-control {
+        color: $color-black;
+        padding: 12px 30px 12px 20px;
+        border: 1px solid $color-gray-lite;
+
+        &.arrow-black {
+            background-position: right 10px center;
+        }
+    }
+
+    &.right {
+        float: none;
+    }
+
+    .list {
+        min-width: 190px;
+        margin-top: 1px;
+        padding: 19px 0 16px;
+        border-radius: $radius-default;
+        box-shadow: 0 0 3px rgba(0, 0, 0, 0.15);
+        transform: scale(0.8);
+        z-index: 9;
+        transition: all $transition-default cubic-bezier(0.5, 0, 0, 1.25);
+    }
+
+    .option {
+        line-height: 36px;
+        padding: 0 30px;
+
+        &:hover {
+            color: $color-default;
+            color: var(--color-primary);
+            background: $color-white;
+        }
+
+        &.focus {
+            background: $color-white;
+        }
+
+        &.selected {
+            font-weight: 400;
+            color: $color-default;
+            color: var(--color-primary);
+
+            &.focus {
+                background: $color-white;
+            }
+        }
+    }
+}

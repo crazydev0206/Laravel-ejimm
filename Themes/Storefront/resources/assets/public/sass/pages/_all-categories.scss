@@ -1,0 +1,106 @@
+.all-categories-wrap {
+    margin-top: 44px;
+
+    .empty-message {
+        display: flex;
+        padding: 40px 0;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+
+        svg {
+            height: 100px;
+            width: 100px;
+            margin-bottom: 22px;
+
+            path {
+                fill: $color-default;
+                fill: var(--color-primary);
+            }
+        }
+    }
+}
+
+.single-category {
+    margin-bottom: 30px;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+
+    .section-title {
+        margin-bottom: 24px;
+        padding-bottom: 13px;
+        border-bottom: 1px solid $border-color-lite;
+
+        > a {
+            color: $color-black;
+
+            &:hover {
+                color: $color-default;
+                color: var(--color-primary);
+            }
+        }
+    }
+}
+
+.single-category-list {
+    column-count: 6;
+    column-gap: 40px;
+    column-fill: initial;
+
+    li {
+        display: inline-block;
+        width: 100%;
+        padding: 2px 0;
+
+        a {
+            font-size: 14px;
+            font-weight: 500;
+            display: inline-block;
+            max-width: 100%;
+            color: $color-gray;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+
+            &:hover {
+                color: $color-default;
+                color: var(--color-primary);
+            }
+        }
+    }
+
+    .sub-category-list {
+        margin-left: 10px;
+        padding-top: 2px;
+
+        li {
+            padding: 1px 0;
+
+            a {
+                font-size: 13px;
+                font-weight: 400;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: $xl) {
+    .single-category-list {
+        column-count: 4;
+    }
+}
+
+@media screen and (max-width: $lg) {
+    .single-category-list {
+        column-count: 3;
+    }
+}
+
+@media screen and (max-width: $sm) {
+    .single-category-list {
+        column-count: 2;
+    }
+}

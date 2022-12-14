@@ -1,0 +1,60 @@
+.top-brands-wrap {
+    margin-top: 50px;
+}
+
+.top-brands {
+    padding: 35px 50px;
+    border: 1px solid $border-color-lite;
+    border-radius: $radius-default;
+    white-space: nowrap;
+    overflow: hidden;
+
+    .slick-prev {
+        left: 25px;
+    }
+
+    .slick-next {
+        right: 25px;
+    }
+
+    .slick-prev,
+    .slick-next {
+        &:before {
+            font-weight: 900;
+        }
+    }
+
+    .top-brand-image {
+        display: inline-flex;
+        height: 55px;
+        margin: 0 10px;
+        align-items: center;
+        justify-content: center;
+
+        &:hover {
+            > img {
+                transform: scale(1.1);
+            }
+        }
+
+        > img {
+            max-height: 100%;
+            max-width: 100%;
+            transition: $transition-primary;
+        }
+    }
+}
+
+@media screen and (max-width: $md) {
+    .top-brands {
+        padding: 35px;
+
+        .slick-prev {
+            left: 15px;
+        }
+
+        .slick-next {
+            right: 15px;
+        }
+    }
+}

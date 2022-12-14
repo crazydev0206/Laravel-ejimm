@@ -1,0 +1,130 @@
+.reviews {
+	padding-top: 45px;
+
+	.pagination {
+		margin-top: 11px;
+	}
+}
+
+.review-form {
+	> h4 {
+		margin-bottom: 28px;
+	}
+
+	.rating-input {
+		font-size: 20px;
+		line-height: 20px;
+	  	position: relative;
+	  	display: flex;
+	  	margin: -1px 0 -2px;
+	  	flex-direction: row-reverse;
+	  	justify-content: flex-end;
+
+	  	label {
+	  		margin-bottom: 0;
+	    	color: $color-gray-lite;
+	    	cursor: pointer;
+	    	transition: $transition-default;
+
+	    	&:hover,
+	    	&:focus {
+	      		color: $color-yellow;
+
+	      		~ label {
+	        		color: $color-yellow;
+	      		}
+	    	}
+	  	}
+
+	  	input[type="radio"] {
+	    	display: none;
+
+	    	&:checked {
+	      		~ label {
+	        		color: $color-yellow;
+	      		}
+	    	}
+	  	}
+	}
+
+	.btn-submit {
+		padding: 7px 30px;
+	}
+}
+
+.user-review-wrap {
+	margin-top: 4px;
+
+    &.loading {
+        &:after {
+            border-width: 2px;
+        }
+    }
+
+	.empty-message {
+        display: flex;
+        padding: 35px 0 40px;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+
+        svg {
+            height: 80px;
+            width: 80px;
+            margin-bottom: 16px;
+
+            path {
+                stroke-width: 3px;
+                fill: $color-default;
+                fill: var(--color-primary);
+                stroke: $color-default;
+                stroke: var(--color-primary);
+            }
+        }
+	}
+}
+
+.user-review {
+	margin-bottom: 27px;
+
+	&:nth-child(4) {
+		margin-bottom: 0;
+	}
+
+    &:nth-child(n+5) {
+        display: none;
+    }
+
+	.reviewer-name {
+		font-size: 16px;
+		margin-bottom: 6px;
+	}
+
+	.product-rating {
+		margin-bottom: 11px;
+	}
+
+	.reviewer-message {
+		color: $color-gray;
+		margin-bottom: 7px;
+	}
+
+	.review-date,
+    .review-approval {
+		font-size: 14px;
+		color: $color-gray-dark;
+	}
+}
+
+@media screen and (max-width: $xl) {
+	.user-review-wrap {
+		margin: 48px 0 8px;
+	}
+}
+
+@media screen and (max-width: $lg) {
+	.reviews {
+		padding-top: 35px;
+	}
+}

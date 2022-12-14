@@ -1,0 +1,25 @@
+<?php
+
+namespace Modules\$MODULE_NAME$\Http\Requests;
+
+use Modules\Core\Http\Requests\Request;
+
+class Save$ENTITY_NAME$Request extends Request
+{
+    /**
+     * Available attributes.
+     *
+     * @var string
+     */
+    protected $availableAttributes = '$LOWERCASE_MODULE_NAME$::attributes';
+
+    /**
+     * Get the validation rules that apply to the request.
+     *
+     * @return array
+     */
+    public function rules()
+    {
+        return [];
+    }
+}

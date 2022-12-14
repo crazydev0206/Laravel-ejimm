@@ -1,0 +1,8 @@
+<?php
+
+return [
+    'index' => 'Index $TITLE_CASE_ENTITY_NAME$',
+    'create' => 'Create $TITLE_CASE_ENTITY_NAME$',
+    'edit' => 'Edit $TITLE_CASE_ENTITY_NAME$',
+    'destroy' => 'Delete $TITLE_CASE_ENTITY_NAME$',
+];

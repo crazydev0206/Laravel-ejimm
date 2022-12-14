@@ -1,0 +1,32 @@
+@extends('admin::layout')
+
+@component('admin::components.page.header')
+    @slot('title', trans('$LOWERCASE_MODULE_NAME$::$PLURAL_SNAKE_CASE_ENTITY_NAME$.$PLURAL_SNAKE_CASE_ENTITY_NAME$'))
+
+    <li class="active">{{ trans('$LOWERCASE_MODULE_NAME$::$PLURAL_SNAKE_CASE_ENTITY_NAME$.$PLURAL_SNAKE_CASE_ENTITY_NAME$') }}</li>
+@endcomponent
+
+@component('admin::components.page.index_table')
+    @slot('buttons', ['create'])
+    @slot('resource', '$PLURAL_SNAKE_CASE_ENTITY_NAME$')
+    @slot('name', trans('$LOWERCASE_MODULE_NAME$::$PLURAL_SNAKE_CASE_ENTITY_NAME$.$SNAKE_CASE_ENTITY_NAME$'))
+
+    @component('admin::components.table')
+        @slot('thead')
+            <tr>
+                @include('admin::partials.table.select_all')
+            </tr>
+        @endslot
+    @endcomponent
+@endcomponent
+
+@push('scripts')
+    <script>
+        new DataTable('#$PLURAL_SNAKE_CASE_ENTITY_NAME$-table .table', {
+            columns: [
+                { data: 'checkbox', orderable: false, searchable: false, width: '3%' },
+                //
+            ],
+        });
+    </script>
+@endpush

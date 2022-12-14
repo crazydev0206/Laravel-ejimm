@@ -1,0 +1,102 @@
+.my-addresses {
+	padding: 40px 30px;
+
+	.address-card-wrap {
+		.btn-add-new-address {
+			margin-top: 0;
+		}
+
+		.address-card {
+            position: relative;
+            flex-grow: 1;
+			margin-bottom: 30px;
+			padding: 15px 20px 12px;
+			border: 1px solid $color-gray-lite;
+			border-radius: $radius-default;
+			cursor: pointer;
+
+			&.active {
+				border-color: $color-default-transparent;
+				border-color: var(--color-primary-transparent);
+			}
+
+			.address-card-data {
+                margin-bottom: 6px;
+
+				> span {
+					font-weight: 500;
+					display: block;
+
+					&:not(:first-child) {
+						font-size: 14px;
+						font-weight: 400;
+						line-height: 22px;
+						color: $color-gray;
+					}
+
+					&:nth-child(2) {
+						margin-top: 5px;
+					}
+				}
+            }
+
+            .address-card-actions {
+				display: flex;
+				margin-left: -8px;
+
+				.btn {
+					padding: 0 8px;
+				}
+
+				.btn-edit-address {
+					&:hover {
+						color: $color-default;
+						color: var(--color-primary);
+					}
+				}
+
+				.btn-delete-address {
+					&:hover {
+						color: $color-red;
+					}
+				}
+			}
+		}
+	}
+
+	.add-new-address-form {
+		margin-top: -7px;
+
+		.section-title {
+			margin-bottom: 25px;
+		    padding-bottom: 13px;
+		    border-bottom: 1px solid #e5e5e5;
+		}
+
+		.btn-cancel {
+			margin-right: 12px;
+		}
+	}
+}
+
+@media screen and (max-width: 500px) {
+	.my-addresses {
+		.address-card-wrap {
+			.btn-add-new-address {
+				width: 100%;
+			}
+		}
+
+		.add-new-address-form {
+			.btn-cancel {
+				width: 100%;
+				margin-right: 0;
+			}
+
+			.btn-save-address {
+				width: 100%;
+				margin-top: 15px;
+			}
+		}
+	}
+}

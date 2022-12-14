@@ -1,0 +1,99 @@
+.header-column-right {
+    height: 60px;
+    padding: 0 15px;
+
+    .header-wishlist,
+    .header-cart {
+        display: flex;
+        align-items: center;
+
+        > span {
+            line-height: 28px;
+            color: $color-black;
+            white-space: nowrap;
+            transition: $transition-default;
+        }
+    }
+
+    .header-wishlist {
+        &:hover {
+            > span,
+            .icon-wrap > i {
+                color: $color-default;
+                color: var(--color-primary);
+            }
+        }
+    }
+
+    .header-cart {
+        margin-left: 35px;
+        cursor: pointer;
+
+        &:hover {
+            > span,
+            .icon-wrap > i {
+                color: $color-default;
+                color: var(--color-primary);
+            }
+        }
+    }
+
+    .icon-wrap {
+        position: relative;
+        margin-right: 10px;
+
+        > i {
+            font-size: 34px;
+            line-height: 36px;
+            color: $color-black;
+            transition: $transition-default;
+        }
+
+        > .count {
+            position: absolute;
+            font-size: 10px;
+            line-height: 20px;
+            top: 1px;
+            right: -6px;
+            height: 18px;
+            width: 18px;
+            color: $color-white;
+            background: $color-red;
+            text-align: center;
+            border-radius: 50%;
+        }
+    }
+}
+
+@media screen and (max-width: $xl) {
+    .header-column-right {
+        .icon-wrap {
+            margin-right: 6px;
+        }
+
+        .header-wishlist,
+        .header-cart {
+            > span {
+                display: none;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: $lg) {
+    .header-column-right {
+        .header-wishlist {
+            display: none;
+        }
+
+        .header-cart {
+            margin-left: 0;
+        }
+    }
+}
+
+@media screen and (max-width: 391px) {
+    .header-column-right {
+        padding-left: 10px;
+    }
+}

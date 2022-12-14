@@ -1,0 +1,8 @@
+    'admin.$PLURAL_SNAKE_CASE_ENTITY_NAME$' => [
+        'index' => '$LOWERCASE_MODULE_NAME$::permissions.index',
+        'create' => '$LOWERCASE_MODULE_NAME$::permissions.create',
+        'edit' => '$LOWERCASE_MODULE_NAME$::permissions.edit',
+        'destroy' => '$LOWERCASE_MODULE_NAME$::permissions.destroy',
+    ],
+
+// append

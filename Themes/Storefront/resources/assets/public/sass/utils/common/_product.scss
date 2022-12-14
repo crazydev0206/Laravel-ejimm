@@ -1,0 +1,116 @@
+.product-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    > img {
+        max-height: 100%;
+        max-width: 100%;
+        transition: $transition-primary;
+    }
+}
+
+.product-badge {
+    position: absolute;
+    top: -5px;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+
+    .badge {
+        font-size: 12px;
+        font-weight: 500;
+        width: auto;
+        min-width: 0;
+        display: inline-block;
+        margin: 0 0 5px auto;
+        padding: 6px 9px;
+        text-align: right;
+        border-radius: 0;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+        &.badge-success {
+            color: $color-white;
+            background: $color-green;
+        }
+
+        &.badge-primary {
+            color: $color-white;
+            background: $color-default;
+            background: var(--color-primary);
+        }
+
+        &.badge-warning {
+            color: $color-white;
+            background: $color-yellow;
+        }
+
+        &.badge-danger {
+            color: $color-white;
+            background: $color-red;
+        }
+    }
+}
+
+.product-price {
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 24px;
+    display: flex;
+    color: $color-default;
+    color: var(--color-primary);
+
+    .previous-price {
+        position: relative;
+        font-size: 12px;
+        font-weight: 400;
+        margin: 1px 0 0 8px;
+        color: $color-gray-dark;
+        text-decoration: line-through;
+    }
+}
+
+.product-rating {
+    display: inline-flex;
+
+    .back-stars {
+        position: relative;
+        display: flex;
+
+        > i {
+            margin-right: 1px;
+            color: $color-gray-dark;
+
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+    }
+
+    .front-stars {
+        position: absolute;
+        left: 0;
+        top: 0;
+        display: flex;
+        color: $color-yellow;
+        overflow: hidden;
+
+        > i {
+            margin-right: 1px;
+
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+    }
+
+    .rating-count {
+        font-size: 11px;
+        line-height: 12px;
+        margin: 1px 0 0 5px;
+        color: $color-gray;
+    }
+}

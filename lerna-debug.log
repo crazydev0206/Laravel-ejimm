@@ -1,0 +1,536 @@
+0 silly input []
+1 silly flags {
+1 silly flags   _: [ 'bootstrap' ],
+1 silly flags   'reject-cycles': false,
+1 silly flags   rejectCycles: false,
+1 silly flags   args: []
+1 silly flags }
+2 verbose rootPath D:\xampp\htdocs\ecom
+3 info version 2.11.0
+4 silly existsSync D:\xampp\htdocs\ecom\VERSION
+5 silly initialize attempt
+6 silly npmConfig {
+6 silly npmConfig   registry: undefined,
+6 silly npmConfig   npmClient: 'yarn',
+6 silly npmConfig   npmClientArgs: undefined,
+6 silly npmConfig   mutex: 'network:42424'
+6 silly npmConfig }
+7 silly initialize success
+8 silly execute attempt
+9 info Bootstrapping 7 packages
+10 info lifecycle preinstall
+11 silly runScript preinstall admin-module
+12 silly admin-module
+13 silly runScript preinstall category-module
+14 silly category-module
+15 silly runScript preinstall media-module
+16 silly media-module
+17 silly runScript preinstall menu-module
+18 silly menu-module
+19 silly runScript preinstall translation-module
+20 silly translation-module
+21 silly runScript preinstall user-module
+22 silly user-module
+23 silly runScript preinstall storefront-theme
+24 silly storefront-theme
+25 silly hasDependencyInstalled storefront-theme rtlcss
+26 silly dependencyIsSatisfied [
+26 silly dependencyIsSatisfied   'rtlcss',
+26 silly dependencyIsSatisfied   '^2.4.0',
+26 silly dependencyIsSatisfied   'D:\\xampp\\htdocs\\ecom\\Themes\\Storefront\\node_modules'
+26 silly dependencyIsSatisfied ]
+27 verbose dependencyIsSatisfied rtlcss false
+28 silly hasDependencyInstalled admin-module font-awesome
+29 silly dependencyIsSatisfied [
+29 silly dependencyIsSatisfied   'font-awesome',
+29 silly dependencyIsSatisfied   '^4.7.0',
+29 silly dependencyIsSatisfied   'D:\\xampp\\htdocs\\ecom\\Modules\\Admin\\node_modules'
+29 silly dependencyIsSatisfied ]
+30 verbose dependencyIsSatisfied font-awesome false
+31 silly hasDependencyInstalled storefront-theme kbw-countdown
+32 silly dependencyIsSatisfied [
+32 silly dependencyIsSatisfied   'kbw-countdown',
+32 silly dependencyIsSatisfied   'https://github.com/kbwood/countdown.git',
+32 silly dependencyIsSatisfied   'D:\\xampp\\htdocs\\ecom\\Themes\\Storefront\\node_modules'
+32 silly dependencyIsSatisfied ]
+33 verbose dependencyIsSatisfied kbw-countdown false
+34 silly hasDependencyInstalled admin-module bootstrap
+35 silly dependencyIsSatisfied [
+35 silly dependencyIsSatisfied   'bootstrap',
+35 silly dependencyIsSatisfied   '^3.3.7',
+35 silly dependencyIsSatisfied   'D:\\xampp\\htdocs\\ecom\\Modules\\Admin\\node_modules'
+35 silly dependencyIsSatisfied ]
+36 verbose dependencyIsSatisfied bootstrap false
+37 silly hasDependencyInstalled storefront-theme bootstrap
+38 silly dependencyIsSatisfied [
+38 silly dependencyIsSatisfied   'bootstrap',
+38 silly dependencyIsSatisfied   '^4.3.1',
+38 silly dependencyIsSatisfied   'D:\\xampp\\htdocs\\ecom\\Themes\\Storefront\\node_modules'
+38 silly dependencyIsSatisfied ]
+39 verbose dependencyIsSatisfied bootstrap false
+40 silly hasDependencyInstalled admin-module chart.js
+41 silly dependencyIsSatisfied [
+41 silly dependencyIsSatisfied   'chart.js',
+41 silly dependencyIsSatisfied   '^2.7.3',
+41 silly dependencyIsSatisfied   'D:\\xampp\\htdocs\\ecom\\Modules\\Admin\\node_modules'
+41 silly dependencyIsSatisfied ]
+42 verbose dependencyIsSatisfied chart.js false
+43 silly hasDependencyInstalled admin-module datatables.net
+44 silly dependencyIsSatisfied [
+44 silly dependencyIsSatisfied   'datatables.net',
+44 silly dependencyIsSatisfied   '^1.10.15',
+44 silly dependencyIsSatisfied   'D:\\xampp\\htdocs\\ecom\\Modules\\Admin\\node_modules'
+44 silly dependencyIsSatisfied ]
+45 verbose dependencyIsSatisfied datatables.net false
+46 silly hasDependencyInstalled admin-module datatables.net-bs
+47 silly dependencyIsSatisfied [
+47 silly dependencyIsSatisfied   'datatables.net-bs',
+47 silly dependencyIsSatisfied   '^1.10.15',
+47 silly dependencyIsSatisfied   'D:\\xampp\\htdocs\\ecom\\Modules\\Admin\\node_modules'
+47 silly dependencyIsSatisfied ]
+48 verbose dependencyIsSatisfied datatables.net-bs false
+49 silly hasDependencyInstalled admin-module flatpickr
+50 silly dependencyIsSatisfied [
+50 silly dependencyIsSatisfied   'flatpickr',
+50 silly dependencyIsSatisfied   '^3.0.6',
+50 silly dependencyIsSatisfied   'D:\\xampp\\htdocs\\ecom\\Modules\\Admin\\node_modules'
+50 silly dependencyIsSatisfied ]
+51 verbose dependencyIsSatisfied flatpickr false
+52 silly hasDependencyInstalled storefront-theme flatpickr
+53 silly dependencyIsSatisfied [
+53 silly dependencyIsSatisfied   'flatpickr',
+53 silly dependencyIsSatisfied   '^4.6.3',
+53 silly dependencyIsSatisfied   'D:\\xampp\\htdocs\\ecom\\Themes\\Storefront\\node_modules'
+53 silly dependencyIsSatisfied ]
+54 verbose dependencyIsSatisfied flatpickr false
+55 silly hasDependencyInstalled admin-module jquery
+56 silly dependencyIsSatisfied [
+56 silly dependencyIsSatisfied   'jquery',
+56 silly dependencyIsSatisfied   '^3.2.1',
+56 silly dependencyIsSatisfied   'D:\\xampp\\htdocs\\ecom\\Modules\\Admin\\node_modules'
+56 silly dependencyIsSatisfied ]
+57 verbose dependencyIsSatisfied jquery false
+58 silly hasDependencyInstalled storefront-theme jquery
+59 silly dependencyIsSatisfied [
+59 silly dependencyIsSatisfied   'jquery',
+59 silly dependencyIsSatisfied   '^3.4.1',
+59 silly dependencyIsSatisfied   'D:\\xampp\\htdocs\\ecom\\Themes\\Storefront\\node_modules'
+59 silly dependencyIsSatisfied ]
+60 verbose dependencyIsSatisfied jquery false
+61 silly hasDependencyInstalled admin-module jquery-slimscroll
+62 silly dependencyIsSatisfied [
+62 silly dependencyIsSatisfied   'jquery-slimscroll',
+62 silly dependencyIsSatisfied   '^1.3.8',
+62 silly dependencyIsSatisfied   'D:\\xampp\\htdocs\\ecom\\Modules\\Admin\\node_modules'
+62 silly dependencyIsSatisfied ]
+63 verbose dependencyIsSatisfied jquery-slimscroll false
+64 silly hasDependencyInstalled admin-module lodash
+65 silly dependencyIsSatisfied [
+65 silly dependencyIsSatisfied   'lodash',
+65 silly dependencyIsSatisfied   '^4.17.4',
+65 silly dependencyIsSatisfied   'D:\\xampp\\htdocs\\ecom\\Modules\\Admin\\node_modules'
+65 silly dependencyIsSatisfied ]
+66 verbose dependencyIsSatisfied lodash false
+67 silly hasDependencyInstalled admin-module mousetrap
+68 silly dependencyIsSatisfied [
+68 silly dependencyIsSatisfied   'mousetrap',
+68 silly dependencyIsSatisfied   '^1.6.1',
+68 silly dependencyIsSatisfied   'D:\\xampp\\htdocs\\ecom\\Modules\\Admin\\node_modules'
+68 silly dependencyIsSatisfied ]
+69 verbose dependencyIsSatisfied mousetrap false
+70 silly hasDependencyInstalled admin-module nprogress
+71 silly dependencyIsSatisfied [
+71 silly dependencyIsSatisfied   'nprogress',
+71 silly dependencyIsSatisfied   '^0.2.0',
+71 silly dependencyIsSatisfied   'D:\\xampp\\htdocs\\ecom\\Modules\\Admin\\node_modules'
+71 silly dependencyIsSatisfied ]
+72 verbose dependencyIsSatisfied nprogress false
+73 silly hasDependencyInstalled admin-module selectize
+74 silly dependencyIsSatisfied [
+74 silly dependencyIsSatisfied   'selectize',
+74 silly dependencyIsSatisfied   '^0.12.6',
+74 silly dependencyIsSatisfied   'D:\\xampp\\htdocs\\ecom\\Modules\\Admin\\node_modules'
+74 silly dependencyIsSatisfied ]
+75 verbose dependencyIsSatisfied selectize false
+76 silly hasDependencyInstalled admin-module sortablejs
+77 silly dependencyIsSatisfied [
+77 silly dependencyIsSatisfied   'sortablejs',
+77 silly dependencyIsSatisfied   'https://github.com/RubaXa/Sortable',
+77 silly dependencyIsSatisfied   'D:\\xampp\\htdocs\\ecom\\Modules\\Admin\\node_modules'
+77 silly dependencyIsSatisfied ]
+78 verbose dependencyIsSatisfied sortablejs false
+79 silly hasDependencyInstalled admin-module tinymce
+80 silly dependencyIsSatisfied [
+80 silly dependencyIsSatisfied   'tinymce',
+80 silly dependencyIsSatisfied   '^5.2.2',
+80 silly dependencyIsSatisfied   'D:\\xampp\\htdocs\\ecom\\Modules\\Admin\\node_modules'
+80 silly dependencyIsSatisfied ]
+81 verbose dependencyIsSatisfied tinymce false
+82 silly hasDependencyInstalled category-module jstree
+83 silly dependencyIsSatisfied [
+83 silly dependencyIsSatisfied   'jstree',
+83 silly dependencyIsSatisfied   '^3.3.9',
+83 silly dependencyIsSatisfied   'D:\\xampp\\htdocs\\ecom\\Modules\\Category\\node_modules'
+83 silly dependencyIsSatisfied ]
+84 verbose dependencyIsSatisfied jstree true
+85 silly hasDependencyInstalled media-module dropzone
+86 silly dependencyIsSatisfied [
+86 silly dependencyIsSatisfied   'dropzone',
+86 silly dependencyIsSatisfied   '^5.4.0',
+86 silly dependencyIsSatisfied   'D:\\xampp\\htdocs\\ecom\\Modules\\Media\\node_modules'
+86 silly dependencyIsSatisfied ]
+87 verbose dependencyIsSatisfied dropzone true
+88 silly hasDependencyInstalled menu-module nestable2
+89 silly dependencyIsSatisfied [
+89 silly dependencyIsSatisfied   'nestable2',
+89 silly dependencyIsSatisfied   '^1.6.0',
+89 silly dependencyIsSatisfied   'D:\\xampp\\htdocs\\ecom\\Modules\\Menu\\node_modules'
+89 silly dependencyIsSatisfied ]
+90 verbose dependencyIsSatisfied nestable2 true
+91 silly hasDependencyInstalled translation-module x-editable
+92 silly dependencyIsSatisfied [
+92 silly dependencyIsSatisfied   'x-editable',
+92 silly dependencyIsSatisfied   '^1.5.1',
+92 silly dependencyIsSatisfied   'D:\\xampp\\htdocs\\ecom\\Modules\\Translation\\node_modules'
+92 silly dependencyIsSatisfied ]
+93 verbose dependencyIsSatisfied x-editable true
+94 silly hasDependencyInstalled storefront-theme animate.css
+95 silly dependencyIsSatisfied [
+95 silly dependencyIsSatisfied   'animate.css',
+95 silly dependencyIsSatisfied   '^3.7.2',
+95 silly dependencyIsSatisfied   'D:\\xampp\\htdocs\\ecom\\Themes\\Storefront\\node_modules'
+95 silly dependencyIsSatisfied ]
+96 verbose dependencyIsSatisfied animate.css false
+97 silly hasDependencyInstalled storefront-theme jquery-nice-select
+98 silly dependencyIsSatisfied [
+98 silly dependencyIsSatisfied   'jquery-nice-select',
+98 silly dependencyIsSatisfied   '^1.1.0',
+98 silly dependencyIsSatisfied   'D:\\xampp\\htdocs\\ecom\\Themes\\Storefront\\node_modules'
+98 silly dependencyIsSatisfied ]
+99 verbose dependencyIsSatisfied jquery-nice-select false
+100 silly hasDependencyInstalled storefront-theme jquery-zoom
+101 silly dependencyIsSatisfied [
+101 silly dependencyIsSatisfied   'jquery-zoom',
+101 silly dependencyIsSatisfied   '^1.7.21',
+101 silly dependencyIsSatisfied   'D:\\xampp\\htdocs\\ecom\\Themes\\Storefront\\node_modules'
+101 silly dependencyIsSatisfied ]
+102 verbose dependencyIsSatisfied jquery-zoom false
+103 silly hasDependencyInstalled storefront-theme line-awesome
+104 silly dependencyIsSatisfied [
+104 silly dependencyIsSatisfied   'line-awesome',
+104 silly dependencyIsSatisfied   '^1.3.0',
+104 silly dependencyIsSatisfied   'D:\\xampp\\htdocs\\ecom\\Themes\\Storefront\\node_modules'
+104 silly dependencyIsSatisfied ]
+105 verbose dependencyIsSatisfied line-awesome false
+106 silly hasDependencyInstalled storefront-theme nouislider
+107 silly dependencyIsSatisfied [
+107 silly dependencyIsSatisfied   'nouislider',
+107 silly dependencyIsSatisfied   '^14.1.1',
+107 silly dependencyIsSatisfied   'D:\\xampp\\htdocs\\ecom\\Themes\\Storefront\\node_modules'
+107 silly dependencyIsSatisfied ]
+108 verbose dependencyIsSatisfied nouislider false
+109 silly hasDependencyInstalled storefront-theme popper.js
+110 silly dependencyIsSatisfied [
+110 silly dependencyIsSatisfied   'popper.js',
+110 silly dependencyIsSatisfied   '^1.15.0',
+110 silly dependencyIsSatisfied   'D:\\xampp\\htdocs\\ecom\\Themes\\Storefront\\node_modules'
+110 silly dependencyIsSatisfied ]
+111 verbose dependencyIsSatisfied popper.js false
+112 silly hasDependencyInstalled storefront-theme slick-carousel
+113 silly dependencyIsSatisfied [
+113 silly dependencyIsSatisfied   'slick-carousel',
+113 silly dependencyIsSatisfied   '^1.8.1',
+113 silly dependencyIsSatisfied   'D:\\xampp\\htdocs\\ecom\\Themes\\Storefront\\node_modules'
+113 silly dependencyIsSatisfied ]
+114 verbose dependencyIsSatisfied slick-carousel false
+115 silly hasDependencyInstalled storefront-theme slick-lightbox
+116 silly dependencyIsSatisfied [
+116 silly dependencyIsSatisfied   'slick-lightbox',
+116 silly dependencyIsSatisfied   '^0.2.12',
+116 silly dependencyIsSatisfied   'D:\\xampp\\htdocs\\ecom\\Themes\\Storefront\\node_modules'
+116 silly dependencyIsSatisfied ]
+117 verbose dependencyIsSatisfied slick-lightbox false
+118 silly hasDependencyInstalled storefront-theme v-click-outside
+119 silly dependencyIsSatisfied [
+119 silly dependencyIsSatisfied   'v-click-outside',
+119 silly dependencyIsSatisfied   '^3.0.1',
+119 silly dependencyIsSatisfied   'D:\\xampp\\htdocs\\ecom\\Themes\\Storefront\\node_modules'
+119 silly dependencyIsSatisfied ]
+120 verbose dependencyIsSatisfied v-click-outside false
+121 silly hasDependencyInstalled storefront-theme vue
+122 silly dependencyIsSatisfied [
+122 silly dependencyIsSatisfied   'vue',
+122 silly dependencyIsSatisfied   '^2.6.11',
+122 silly dependencyIsSatisfied   'D:\\xampp\\htdocs\\ecom\\Themes\\Storefront\\node_modules'
+122 silly dependencyIsSatisfied ]
+123 verbose dependencyIsSatisfied vue false
+124 silly hasDependencyInstalled storefront-theme vue-toast-notification
+125 silly dependencyIsSatisfied [
+125 silly dependencyIsSatisfied   'vue-toast-notification',
+125 silly dependencyIsSatisfied   '^0.0.3',
+125 silly dependencyIsSatisfied   'D:\\xampp\\htdocs\\ecom\\Themes\\Storefront\\node_modules'
+125 silly dependencyIsSatisfied ]
+126 verbose dependencyIsSatisfied vue-toast-notification false
+127 silly root dependencies []
+128 silly leaf dependencies {
+128 silly leaf dependencies   "storefront-theme": [
+128 silly leaf dependencies     {
+128 silly leaf dependencies       "dependency": "rtlcss@^2.4.0",
+128 silly leaf dependencies       "isSatisfied": false
+128 silly leaf dependencies     },
+128 silly leaf dependencies     {
+128 silly leaf dependencies       "dependency": "kbw-countdown@https://github.com/kbwood/countdown.git",
+128 silly leaf dependencies       "isSatisfied": false
+128 silly leaf dependencies     },
+128 silly leaf dependencies     {
+128 silly leaf dependencies       "dependency": "bootstrap@^4.3.1",
+128 silly leaf dependencies       "isSatisfied": false
+128 silly leaf dependencies     },
+128 silly leaf dependencies     {
+128 silly leaf dependencies       "dependency": "flatpickr@^4.6.3",
+128 silly leaf dependencies       "isSatisfied": false
+128 silly leaf dependencies     },
+128 silly leaf dependencies     {
+128 silly leaf dependencies       "dependency": "jquery@^3.4.1",
+128 silly leaf dependencies       "isSatisfied": false
+128 silly leaf dependencies     },
+128 silly leaf dependencies     {
+128 silly leaf dependencies       "dependency": "animate.css@^3.7.2",
+128 silly leaf dependencies       "isSatisfied": false
+128 silly leaf dependencies     },
+128 silly leaf dependencies     {
+128 silly leaf dependencies       "dependency": "jquery-nice-select@^1.1.0",
+128 silly leaf dependencies       "isSatisfied": false
+128 silly leaf dependencies     },
+128 silly leaf dependencies     {
+128 silly leaf dependencies       "dependency": "jquery-zoom@^1.7.21",
+128 silly leaf dependencies       "isSatisfied": false
+128 silly leaf dependencies     },
+128 silly leaf dependencies     {
+128 silly leaf dependencies       "dependency": "line-awesome@^1.3.0",
+128 silly leaf dependencies       "isSatisfied": false
+128 silly leaf dependencies     },
+128 silly leaf dependencies     {
+128 silly leaf dependencies       "dependency": "nouislider@^14.1.1",
+128 silly leaf dependencies       "isSatisfied": false
+128 silly leaf dependencies     },
+128 silly leaf dependencies     {
+128 silly leaf dependencies       "dependency": "popper.js@^1.15.0",
+128 silly leaf dependencies       "isSatisfied": false
+128 silly leaf dependencies     },
+128 silly leaf dependencies     {
+128 silly leaf dependencies       "dependency": "slick-carousel@^1.8.1",
+128 silly leaf dependencies       "isSatisfied": false
+128 silly leaf dependencies     },
+128 silly leaf dependencies     {
+128 silly leaf dependencies       "dependency": "slick-lightbox@^0.2.12",
+128 silly leaf dependencies       "isSatisfied": false
+128 silly leaf dependencies     },
+128 silly leaf dependencies     {
+128 silly leaf dependencies       "dependency": "v-click-outside@^3.0.1",
+128 silly leaf dependencies       "isSatisfied": false
+128 silly leaf dependencies     },
+128 silly leaf dependencies     {
+128 silly leaf dependencies       "dependency": "vue@^2.6.11",
+128 silly leaf dependencies       "isSatisfied": false
+128 silly leaf dependencies     },
+128 silly leaf dependencies     {
+128 silly leaf dependencies       "dependency": "vue-toast-notification@^0.0.3",
+128 silly leaf dependencies       "isSatisfied": false
+128 silly leaf dependencies     }
+128 silly leaf dependencies   ],
+128 silly leaf dependencies   "admin-module": [
+128 silly leaf dependencies     {
+128 silly leaf dependencies       "dependency": "font-awesome@^4.7.0",
+128 silly leaf dependencies       "isSatisfied": false
+128 silly leaf dependencies     },
+128 silly leaf dependencies     {
+128 silly leaf dependencies       "dependency": "bootstrap@^3.3.7",
+128 silly leaf dependencies       "isSatisfied": false
+128 silly leaf dependencies     },
+128 silly leaf dependencies     {
+128 silly leaf dependencies       "dependency": "chart.js@^2.7.3",
+128 silly leaf dependencies       "isSatisfied": false
+128 silly leaf dependencies     },
+128 silly leaf dependencies     {
+128 silly leaf dependencies       "dependency": "datatables.net@^1.10.15",
+128 silly leaf dependencies       "isSatisfied": false
+128 silly leaf dependencies     },
+128 silly leaf dependencies     {
+128 silly leaf dependencies       "dependency": "datatables.net-bs@^1.10.15",
+128 silly leaf dependencies       "isSatisfied": false
+128 silly leaf dependencies     },
+128 silly leaf dependencies     {
+128 silly leaf dependencies       "dependency": "flatpickr@^3.0.6",
+128 silly leaf dependencies       "isSatisfied": false
+128 silly leaf dependencies     },
+128 silly leaf dependencies     {
+128 silly leaf dependencies       "dependency": "jquery@^3.2.1",
+128 silly leaf dependencies       "isSatisfied": false
+128 silly leaf dependencies     },
+128 silly leaf dependencies     {
+128 silly leaf dependencies       "dependency": "jquery-slimscroll@^1.3.8",
+128 silly leaf dependencies       "isSatisfied": false
+128 silly leaf dependencies     },
+128 silly leaf dependencies     {
+128 silly leaf dependencies       "dependency": "lodash@^4.17.4",
+128 silly leaf dependencies       "isSatisfied": false
+128 silly leaf dependencies     },
+128 silly leaf dependencies     {
+128 silly leaf dependencies       "dependency": "mousetrap@^1.6.1",
+128 silly leaf dependencies       "isSatisfied": false
+128 silly leaf dependencies     },
+128 silly leaf dependencies     {
+128 silly leaf dependencies       "dependency": "nprogress@^0.2.0",
+128 silly leaf dependencies       "isSatisfied": false
+128 silly leaf dependencies     },
+128 silly leaf dependencies     {
+128 silly leaf dependencies       "dependency": "selectize@^0.12.6",
+128 silly leaf dependencies       "isSatisfied": false
+128 silly leaf dependencies     },
+128 silly leaf dependencies     {
+128 silly leaf dependencies       "dependency": "sortablejs@https://github.com/RubaXa/Sortable",
+128 silly leaf dependencies       "isSatisfied": false
+128 silly leaf dependencies     },
+128 silly leaf dependencies     {
+128 silly leaf dependencies       "dependency": "tinymce@^5.2.2",
+128 silly leaf dependencies       "isSatisfied": false
+128 silly leaf dependencies     }
+128 silly leaf dependencies   ],
+128 silly leaf dependencies   "category-module": [
+128 silly leaf dependencies     {
+128 silly leaf dependencies       "dependency": "jstree@^3.3.9",
+128 silly leaf dependencies       "isSatisfied": true
+128 silly leaf dependencies     }
+128 silly leaf dependencies   ],
+128 silly leaf dependencies   "media-module": [
+128 silly leaf dependencies     {
+128 silly leaf dependencies       "dependency": "dropzone@^5.4.0",
+128 silly leaf dependencies       "isSatisfied": true
+128 silly leaf dependencies     }
+128 silly leaf dependencies   ],
+128 silly leaf dependencies   "menu-module": [
+128 silly leaf dependencies     {
+128 silly leaf dependencies       "dependency": "nestable2@^1.6.0",
+128 silly leaf dependencies       "isSatisfied": true
+128 silly leaf dependencies     }
+128 silly leaf dependencies   ],
+128 silly leaf dependencies   "translation-module": [
+128 silly leaf dependencies     {
+128 silly leaf dependencies       "dependency": "x-editable@^1.5.1",
+128 silly leaf dependencies       "isSatisfied": true
+128 silly leaf dependencies     }
+128 silly leaf dependencies   ]
+128 silly leaf dependencies }
+129 info Installing external dependencies
+130 verbose actions 2 actions, concurrency 4
+131 silly installInDir Storefront [
+131 silly installInDir   'rtlcss@^2.4.0',
+131 silly installInDir   'kbw-countdown@https://github.com/kbwood/countdown.git',
+131 silly installInDir   'bootstrap@^4.3.1',
+131 silly installInDir   'flatpickr@^4.6.3',
+131 silly installInDir   'jquery@^3.4.1',
+131 silly installInDir   'animate.css@^3.7.2',
+131 silly installInDir   'jquery-nice-select@^1.1.0',
+131 silly installInDir   'jquery-zoom@^1.7.21',
+131 silly installInDir   'line-awesome@^1.3.0',
+131 silly installInDir   'nouislider@^14.1.1',
+131 silly installInDir   'popper.js@^1.15.0',
+131 silly installInDir   'slick-carousel@^1.8.1',
+131 silly installInDir   'slick-lightbox@^0.2.12',
+131 silly installInDir   'v-click-outside@^3.0.1',
+131 silly installInDir   'vue@^2.6.11',
+131 silly installInDir   'vue-toast-notification@^0.0.3'
+131 silly installInDir ]
+132 silly installInDir backup D:\xampp\htdocs\ecom\Themes\Storefront\package.json
+133 silly rename [
+133 silly rename   'D:\\xampp\\htdocs\\ecom\\Themes\\Storefront\\package.json',
+133 silly rename   'D:\\xampp\\htdocs\\ecom\\Themes\\Storefront\\package.json.lerna_backup'
+133 silly rename ]
+134 silly installInDir Admin [
+134 silly installInDir   'font-awesome@^4.7.0',
+134 silly installInDir   'bootstrap@^3.3.7',
+134 silly installInDir   'chart.js@^2.7.3',
+134 silly installInDir   'datatables.net@^1.10.15',
+134 silly installInDir   'datatables.net-bs@^1.10.15',
+134 silly installInDir   'flatpickr@^3.0.6',
+134 silly installInDir   'jquery@^3.2.1',
+134 silly installInDir   'jquery-slimscroll@^1.3.8',
+134 silly installInDir   'lodash@^4.17.4',
+134 silly installInDir   'mousetrap@^1.6.1',
+134 silly installInDir   'nprogress@^0.2.0',
+134 silly installInDir   'selectize@^0.12.6',
+134 silly installInDir   'sortablejs@https://github.com/RubaXa/Sortable',
+134 silly installInDir   'tinymce@^5.2.2'
+134 silly installInDir ]
+135 silly installInDir backup D:\xampp\htdocs\ecom\Modules\Admin\package.json
+136 silly rename [
+136 silly rename   'D:\\xampp\\htdocs\\ecom\\Modules\\Admin\\package.json',
+136 silly rename   'D:\\xampp\\htdocs\\ecom\\Modules\\Admin\\package.json.lerna_backup'
+136 silly rename ]
+137 silly installInDir writing tempJson {
+137 silly installInDir   dependencies: {
+137 silly installInDir     rtlcss: '^2.4.0',
+137 silly installInDir     'kbw-countdown': 'https://github.com/kbwood/countdown.git',
+137 silly installInDir     bootstrap: '^4.3.1',
+137 silly installInDir     flatpickr: '^4.6.3',
+137 silly installInDir     jquery: '^3.4.1',
+137 silly installInDir     'animate.css': '^3.7.2',
+137 silly installInDir     'jquery-nice-select': '^1.1.0',
+137 silly installInDir     'jquery-zoom': '^1.7.21',
+137 silly installInDir     'line-awesome': '^1.3.0',
+137 silly installInDir     nouislider: '^14.1.1',
+137 silly installInDir     'popper.js': '^1.15.0',
+137 silly installInDir     'slick-carousel': '^1.8.1',
+137 silly installInDir     'slick-lightbox': '^0.2.12',
+137 silly installInDir     'v-click-outside': '^3.0.1',
+137 silly installInDir     vue: '^2.6.11',
+137 silly installInDir     'vue-toast-notification': '^0.0.3'
+137 silly installInDir   }
+137 silly installInDir }
+138 silly installInDir writing tempJson {
+138 silly installInDir   dependencies: {
+138 silly installInDir     'font-awesome': '^4.7.0',
+138 silly installInDir     bootstrap: '^3.3.7',
+138 silly installInDir     'chart.js': '^2.7.3',
+138 silly installInDir     'datatables.net': '^1.10.15',
+138 silly installInDir     'datatables.net-bs': '^1.10.15',
+138 silly installInDir     flatpickr: '^3.0.6',
+138 silly installInDir     jquery: '^3.2.1',
+138 silly installInDir     'jquery-slimscroll': '^1.3.8',
+138 silly installInDir     lodash: '^4.17.4',
+138 silly installInDir     mousetrap: '^1.6.1',
+138 silly installInDir     nprogress: '^0.2.0',
+138 silly installInDir     selectize: '^0.12.6',
+138 silly installInDir     sortablejs: 'https://github.com/RubaXa/Sortable',
+138 silly installInDir     tinymce: '^5.2.2'
+138 silly installInDir   }
+138 silly installInDir }
+139 silly getExecOpts { cwd: 'D:\\xampp\\htdocs\\ecom\\Themes\\Storefront' }
+140 silly installInDir [
+140 silly installInDir   'yarn',
+140 silly installInDir   [ 'install', '--mutex', 'network:42424', '--non-interactive' ]
+140 silly installInDir ]
+141 silly getExecOpts { cwd: 'D:\\xampp\\htdocs\\ecom\\Modules\\Admin' }
+142 silly installInDir [
+142 silly installInDir   'yarn',
+142 silly installInDir   [ 'install', '--mutex', 'network:42424', '--non-interactive' ]
+142 silly installInDir ]
+143 silly installInDir cleanup D:\xampp\htdocs\ecom\Modules\Admin\package.json
+144 silly renameSync [
+144 silly renameSync   'D:\\xampp\\htdocs\\ecom\\Modules\\Admin\\package.json.lerna_backup',
+144 silly renameSync   'D:\\xampp\\htdocs\\ecom\\Modules\\Admin\\package.json'
+144 silly renameSync ]
+145 verbose installed leaf admin-module
+146 error execute callback with error
+147 error Error: Command failed: yarn install --mutex network:42424 --non-interactive
+147 error warning package.json: No license field
+147 error warning Waiting for the other yarn instance to finish (15584)
+147 error warning No license field
+147 error error Couldn't find the binary git
+147 error yarn install v1.22.17
+147 error [1/4] Resolving packages...
+147 error [2/4] Fetching packages...
+147 error info Visit https://yarnpkg.com/en/docs/cli/install for documentation about this command.
+147 error
+147 error     at D:\xampp\htdocs\ecom\node_modules\lerna\node_modules\execa\index.js:236:11

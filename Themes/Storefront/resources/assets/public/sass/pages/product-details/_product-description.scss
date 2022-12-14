@@ -1,0 +1,69 @@
+.description {
+	padding-top: 46px;
+
+	h1, h2, h3, h4, h5, h6 {
+		margin-bottom: 14px;
+	}
+
+	p {
+		line-height: 24px;
+		color: $color-gray;
+	}
+
+	ul, ol {
+		padding-left: 16px;
+		overflow: hidden;
+
+		li {
+			margin-bottom: 9px;
+			color: $color-gray;
+		}
+	}
+
+	b, strong, em {
+		font-weight: 500;
+	}
+
+	a {
+		color: $color-default;
+        color: var(--color-primary);
+
+		&:hover {
+			color: $color-default-hover;
+            color: var(--color-primary-hover);
+		}
+	}
+
+    img {
+        height: auto;
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+    iframe {
+        border: none;
+        max-width: 100%;
+    }
+
+    th {
+        font-weight: 500;
+    }
+
+    td {
+        vertical-align: top;
+    }
+}
+
+@media screen and (max-width: $lg) {
+	.description {
+		padding-top: 36px;
+	}
+}
+
+@media screen and (max-width: $md) {
+    .description {
+        img {
+            width: 100%;
+        }
+    }
+}

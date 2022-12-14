@@ -1,0 +1,9 @@
+                $item->item(trans('$LOWERCASE_MODULE_NAME$::$PLURAL_SNAKE_CASE_ENTITY_NAME$.$PLURAL_SNAKE_CASE_ENTITY_NAME$'), function (Item $item) {
+                    $item->weight(5);
+                    $item->route('admin.$PLURAL_SNAKE_CASE_ENTITY_NAME$.index');
+                    $item->authorize(
+                        $this->auth->hasAccess('admin.$PLURAL_SNAKE_CASE_ENTITY_NAME$.index')
+                    );
+                });
+
+// append

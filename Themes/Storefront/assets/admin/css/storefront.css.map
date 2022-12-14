@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack:///./Themes/Storefront/resources/assets/admin/sass/main.scss"],"names":[],"mappings":"AAAA,iBACI,gBACA,kBACJ","file":"Themes/Storefront/assets/admin/css/storefront.css","sourcesContent":["h4.section-title {\r\n    font-weight: 500;\r\n    margin-bottom: 10px;\r\n}\r\n"],"sourceRoot":""}

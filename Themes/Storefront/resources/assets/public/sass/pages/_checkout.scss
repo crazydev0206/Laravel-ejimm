@@ -1,0 +1,27 @@
+@import 'checkout/_checkout-left',
+        'checkout/_checkout-right';
+
+.checkout-wrap {
+    margin-top: 50px;
+}
+
+.checkout {
+    display: flex;
+}
+
+.checkout-inner {
+    display: flex;
+    flex-grow: 1;
+}
+
+@media screen and (max-width: 1280px) {
+    .checkout-inner {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: $lg) {
+    .checkout {
+        flex-direction: column;
+    }
+}

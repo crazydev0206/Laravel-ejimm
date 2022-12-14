@@ -1,0 +1,101 @@
+.checkout-right {
+    width: 395px;
+    min-width: 395px;
+    padding: 0 15px;
+
+    .payment-method {
+        .title {
+            margin-bottom: 13px;
+        }
+    }
+
+    .payment-method-form {
+        padding: 28px 30px 5px;
+        border: 1px solid $color-gray-lite;
+        border-radius: $radius-default;
+
+        .form-group {
+            margin-bottom: 0;
+        }
+
+        .form-radio {
+            margin-bottom: 20px;
+        }
+
+        label {
+            font-weight: 500;
+            color: $color-black;
+        }
+
+        .helper-text {
+            font-size: 13px;
+            display: block;
+            margin: -4px 0 0 28px;
+            color: $color-gray;
+        }
+
+        .error-message {
+            margin: -2px 0 20px;
+        }
+    }
+
+    .payment-instructions {
+        margin-top: 30px;
+        padding: 24px 30px 23px;
+        background: $color-white-dark;
+        border-radius: $radius-default;
+
+        .title {
+            margin-bottom: 14px;
+        }
+
+        > p {
+            font-size: 14px;
+            color: $color-gray;
+        }
+    }
+
+    .coupon-wrap {
+        margin-top: 25px;
+    }
+}
+
+#stripe-card-element {
+    margin-top: 30px;
+    padding: 30px;
+    background: $color-white-dark;
+    border-radius: $radius-default;
+}
+
+@media screen and (min-width: 1281px) {
+    .checkout-right {
+        .coupon-wrap {
+            .form-group {
+                input {
+                    width: auto;
+                }
+
+                .btn-apply-coupon {
+                    width: 100%;
+                    padding: 7px 15px;
+                    white-space: nowrap;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1280px) {
+    .checkout-right {
+        width: 100%;
+        min-width: 0;
+        margin-top: 14px;
+        padding-left: 0;
+    }
+}
+
+@media screen and (max-width: $lg) {
+    .checkout-right {
+        padding-right: 0;
+    }
+}

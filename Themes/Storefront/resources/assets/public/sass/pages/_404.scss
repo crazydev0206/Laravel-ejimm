@@ -1,0 +1,17 @@
+@import '404/_error-page-left',
+        '404/_error-page-right';
+
+.error-page-wrap {
+    margin-top: 70px;
+    padding-bottom: 20px;
+}
+
+.error-page {
+    justify-content: center;
+}
+
+@media screen and (max-width: $lg) {
+    .error-page {
+        flex-direction: column-reverse;
+    }
+}

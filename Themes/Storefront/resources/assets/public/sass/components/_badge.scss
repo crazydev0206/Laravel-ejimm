@@ -1,0 +1,29 @@
+.badge {
+	font-size: 14px;
+	font-weight: 400;
+	min-width: 120px;
+	display: inline-block;
+	padding: 10px 15px;
+	text-align: center;
+	border-radius: 20px;
+}
+
+.badge-success {
+	color: $color-green;
+	background: #edf9f6;
+}
+
+.badge-danger {
+	color: $color-red;
+	background: #fdf0ed;
+}
+
+.badge-info {
+	color: $color-info;
+	background: #eef5fb;
+}
+
+.badge-warning {
+	color: $color-yellow;
+	background: #fff9ef;
+}

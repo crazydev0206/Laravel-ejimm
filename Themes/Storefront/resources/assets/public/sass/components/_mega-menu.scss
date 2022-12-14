@@ -1,0 +1,176 @@
+.mega-menu {
+    > .multi-level {
+        .sub-menu {
+            > li {
+                &:hover {
+                    > a {
+                        color: $color-default;
+                        color: var(--color-primary);
+                    }
+                }
+            }
+        }
+    }
+
+    .dropdown {
+        position: relative;
+
+        &:hover {
+            > .sub-menu {
+                opacity: 1;
+                visibility: visible;
+            }
+        }
+
+        > .sub-menu {
+            position: absolute;
+            width: 175px;
+            padding: 12px 0 10px;
+            background: $color-white;
+            border-radius: $radius-default;
+            box-shadow: 0 1px 5px rgba(0, 0, 0, 0.12);
+            opacity: 0;
+            visibility: hidden;
+            z-index: 1;
+            transition: $transition-default;
+
+            > li {
+                > a {
+                    font-size: 14px;
+                    line-height: 29px;
+                    position: relative;
+                    display: block;
+                    padding: 0 36px 0 19px;
+                    color: $color-gray;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+
+                    > i {
+                        font-size: 12px;
+                        position: absolute;
+                        right: 18px;
+                        top: 50%;
+                        transform: translateY(-50%);
+                    }
+                }
+            }
+        }
+    }
+
+    > .fluid-menu {
+        position: relative;
+
+        &:hover {
+            > .fluid-menu-wrap {
+                opacity: 1;
+                visibility: visible;
+            }
+        }
+
+        > .fluid-menu-wrap {
+            position: absolute;
+            width: 720px;
+            background: $color-white;
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: right bottom;
+            border-radius: $radius-default;
+            box-shadow: 0 1px 5px rgba(0, 0, 0, 0.12);
+            opacity: 0;
+            visibility: hidden;
+            z-index: 1;
+            transition: $transition-default;
+        }
+    }
+
+    .fluid-menu-content {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        padding: 20px 10px 0;
+
+        .fluid-menu-list {
+            flex: 0 0 33.33333333333333%;
+            width: 33.33333333333333%;
+            margin-bottom: 15px;
+            padding: 0 15px;
+        }
+
+        .fluid-menu-title {
+            font-size: 15px;
+            line-height: 22px;
+            margin-bottom: 7px;
+
+            > a {
+                color: $color-black;
+
+                &:hover {
+                    color: $color-default;
+                    color: var(--color-primary);
+                }
+            }
+        }
+
+        .fluid-sub-menu-list {
+            li {
+                a {
+                    font-size: 13px;
+                    line-height: 29px;
+                    max-width: 100%;
+                    display: inline-block;
+                    color: $color-gray;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                    vertical-align: middle;
+
+                    &:hover {
+                        color: $color-default;
+                        color: var(--color-primary);
+                    }
+                }
+            }
+        }
+    }
+}
+
+@keyframes menu-in-top {
+    0% {
+        transform: translateY(-15px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes menu-in-right {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(15px);
+    }
+}
+
+@keyframes menu-in-bottom {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(15px);
+    }
+}
+
+@keyframes menu-in-left {
+    0% {
+        transform: translateX(-15px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}

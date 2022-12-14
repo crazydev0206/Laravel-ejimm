@@ -1,0 +1,17 @@
+.modal {
+    padding-right: 0 !important;
+}
+
+.modal-dialog {
+    margin: 15px auto;
+}
+
+.modal-content {
+    padding: 0;
+    border: none;
+    border-radius: $radius-default;
+}
+
+.modal-body {
+    padding: 0;
+}

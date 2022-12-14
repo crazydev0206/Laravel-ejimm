@@ -1,0 +1,24 @@
+.custom-scrollbar {
+    overflow-y: auto;
+    scrollbar-width: thin;
+    scrollbar-color: $color-gray-lite transparent;
+
+    &::-webkit-scrollbar {
+        width: 8px;
+    }
+
+    &::-webkit-scrollbar-track,
+    &::-webkit-scrollbar-track-piece  {
+        background: transparent;
+    }
+
+    &::-webkit-scrollbar-thumb,
+    &::-webkit-scrollbar-thumb:vertical {
+        border-radius: $radius-default;
+        background: $color-gray-lite;
+
+        &:hover {
+            background: $border-color;
+        }
+    }
+}

@@ -1,0 +1,65 @@
+.browse-categories-wrap {
+    margin-bottom: 30px;
+}
+
+.browse-categories {
+    margin: -7px 0 0 -5px;
+
+    li {
+        display: block;
+        padding: 8px 0;
+
+        &.active {
+            > a {
+                color: $color-default;
+                color: var(--color-primary);
+            }
+        }
+
+        a {
+            display: block;
+            margin-left: 25px;
+            color: $color-gray;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            transition: 200ms ease-in-out;
+
+            &:hover {
+                color: $color-default;
+                color: var(--color-primary);
+            }
+
+            &.active {
+                color: $color-default;
+                color: var(--color-primary);
+            }
+        }
+
+        i {
+            font-size: 14px;
+            float: left;
+            margin-top: 4px;
+            cursor: pointer;
+            transform: rotate(0deg);
+            transition: 200ms ease-in-out;
+
+            &.open {
+                color: $color-default;
+                color: var(--color-primary);
+                transform: rotate(90deg);
+            }
+        }
+
+        ul {
+            list-style: none;
+            display: none;
+            margin-left: 10px;
+            padding-top: 8px;
+
+            li {
+                padding-bottom: 0;
+            }
+        }
+    }
+}

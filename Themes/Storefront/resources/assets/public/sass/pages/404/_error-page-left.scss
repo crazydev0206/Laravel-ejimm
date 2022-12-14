@@ -1,0 +1,51 @@
+.error-page-left {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    .section-title {
+        margin-bottom: 26px;
+        padding-bottom: 21px;
+    }
+
+    > p {
+        width: 350px;
+        margin-bottom: 44px;
+        color: $color-gray;
+    }
+
+    .btn-back-to-home {
+        align-self: flex-start;
+        white-space: nowrap;
+    }
+}
+
+@media screen and (max-width: $lg) {
+    .error-page-left {
+        align-items: center;
+        text-align: center;
+
+        .section-title {
+            font-size: 28px;
+            line-height: 36px;
+            padding-bottom: 22px;
+
+            &:after {
+                right: 0;
+                margin: 0 auto;
+            }
+        }
+
+        .btn-back-to-home {
+            align-self: center;
+        }
+    }
+}
+
+@media screen and (max-width: 380px) {
+    .error-page-left {
+        > p {
+            width: auto;
+        }
+    }
+}

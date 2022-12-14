@@ -1,0 +1,31 @@
+{
+    "name": "storefront-theme",
+    "private": true,
+    "scripts": {
+        "dev": "npm run development",
+        "development": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+        "watch": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --watch --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+        "watch-poll": "npm run watch -- --watch-poll",
+        "hot": "cross-env NODE_ENV=development node_modules/webpack-dev-server/bin/webpack-dev-server.js --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js",
+        "prod": "npm run production",
+        "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --no-progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
+    },
+    "devDependencies": {
+        "animate.css": "^3.7.2",
+        "bootstrap": "^4.3.1",
+        "flatpickr": "^4.6.3",
+        "jquery": "^3.4.1",
+        "jquery-nice-select": "^1.1.0",
+        "jquery-zoom": "^1.7.21",
+        "kbw-countdown": "https://github.com/kbwood/countdown.git",
+        "line-awesome": "^1.3.0",
+        "nouislider": "^14.1.1",
+        "popper.js": "^1.15.0",
+        "rtlcss": "^2.4.0",
+        "slick-carousel": "^1.8.1",
+        "slick-lightbox": "^0.2.12",
+        "v-click-outside": "^3.0.1",
+        "vue": "^2.6.11",
+        "vue-toast-notification": "^0.0.3"
+    }
+}

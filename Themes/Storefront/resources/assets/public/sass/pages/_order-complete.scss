@@ -1,0 +1,67 @@
+.order-complete-wrap {
+    margin-top: 50px;
+}
+
+.order-complete {
+    display: flex;
+    padding: 40px 0;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+
+    .checkmark {
+        display: block;
+        width: 80px;
+        height: 80px;
+        margin-bottom: 23px;
+        border-radius: 50%;
+        stroke: $color-default;
+        stroke: var(--color-primary);
+        stroke-width: 2.5;
+        stroke-miterlimit: 10;
+        animation: fill .4s ease-in-out .4s forwards, scale .3s ease-in-out .9s both;
+    }
+
+    .checkmark-circle {
+        stroke: $color-default;
+        stroke: var(--color-primary);
+        stroke-dasharray: 166;
+        stroke-dashoffset: 166;
+        stroke-width: 1.5;
+        stroke-miterlimit: 10;
+        fill: none;
+        animation: stroke .6s cubic-bezier(0.650, 0.000, 0.450, 1.000) forwards;
+    }
+
+    .checkmark-check {
+        stroke-dasharray: 48;
+        stroke-dashoffset: 48;
+        transform-origin: 50% 50%;
+        animation: stroke .3s cubic-bezier(0.650, 0.000, 0.450, 1.000) .8s forwards;
+    }
+
+    @keyframes stroke {
+        100% {
+            stroke-dashoffset: 0;
+        }
+    }
+
+    @keyframes scale {
+        0%, 100% {
+            transform: none;
+        }
+
+        50% {
+            transform: scale3d(1.1, 1.1, 1);
+        }
+    }
+
+    h2 {
+        margin-bottom: 6px;
+    }
+
+    span {
+        color: $color-gray;
+    }
+}

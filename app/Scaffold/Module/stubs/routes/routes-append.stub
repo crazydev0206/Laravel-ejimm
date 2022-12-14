@@ -1,0 +1,37 @@
+Route::get('$PLURAL_KEBAB_CASE_ENTITY_NAME$', [
+    'as' => 'admin.$PLURAL_SNAKE_CASE_ENTITY_NAME$.index',
+    'uses' => '$ENTITY_NAME$Controller@index',
+    'middleware' => 'can:admin.$PLURAL_SNAKE_CASE_ENTITY_NAME$.index',
+]);
+
+Route::get('$PLURAL_KEBAB_CASE_ENTITY_NAME$/create', [
+    'as' => 'admin.$PLURAL_SNAKE_CASE_ENTITY_NAME$.create',
+    'uses' => '$ENTITY_NAME$Controller@create',
+    'middleware' => 'can:admin.$PLURAL_SNAKE_CASE_ENTITY_NAME$.create',
+]);
+
+Route::post('$PLURAL_KEBAB_CASE_ENTITY_NAME$', [
+    'as' => 'admin.$PLURAL_SNAKE_CASE_ENTITY_NAME$.store',
+    'uses' => '$ENTITY_NAME$Controller@store',
+    'middleware' => 'can:admin.$PLURAL_SNAKE_CASE_ENTITY_NAME$.create',
+]);
+
+Route::get('$PLURAL_KEBAB_CASE_ENTITY_NAME$/{id}/edit', [
+    'as' => 'admin.$PLURAL_SNAKE_CASE_ENTITY_NAME$.edit',
+    'uses' => '$ENTITY_NAME$Controller@edit',
+    'middleware' => 'can:admin.$PLURAL_SNAKE_CASE_ENTITY_NAME$.edit',
+]);
+
+Route::put('$PLURAL_KEBAB_CASE_ENTITY_NAME$/{id}', [
+    'as' => 'admin.$PLURAL_SNAKE_CASE_ENTITY_NAME$.update',
+    'uses' => '$ENTITY_NAME$Controller@update',
+    'middleware' => 'can:admin.$PLURAL_SNAKE_CASE_ENTITY_NAME$.edit',
+]);
+
+Route::delete('$PLURAL_KEBAB_CASE_ENTITY_NAME$/{ids?}', [
+    'as' => 'admin.$PLURAL_SNAKE_CASE_ENTITY_NAME$.destroy',
+    'uses' => '$ENTITY_NAME$Controller@destroy',
+    'middleware' => 'can:admin.$PLURAL_SNAKE_CASE_ENTITY_NAME$.destroy',
+]);
+
+// append

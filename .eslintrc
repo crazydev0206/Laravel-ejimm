@@ -1,0 +1,41 @@
+{
+    "env": {
+        "browser": true,
+        "commonjs": true,
+        "es6": true,
+        "jquery": true
+    },
+    "extends": [
+        "spatie",
+        "plugin:import/errors",
+        "plugin:import/warnings"
+    ],
+    "rules": {
+        "prefer-const": "off",
+        "space-unary-ops": [
+            "warn",
+            {
+                "overrides": {
+                    "!": true
+                }
+            }
+        ]
+    },
+    "globals": {
+        "_": true,
+        "Sortable": true,
+        "Mousetrap": true,
+        "FleetCart": true,
+        "DataTable": true,
+        "MediaPicker": true,
+        "noUiSlider": true,
+        "route": true,
+        "ohSnap": true,
+        "notify": true,
+        "info": true,
+        "success": true,
+        "warning": true,
+        "error": true,
+        "trans": true
+    }
+}

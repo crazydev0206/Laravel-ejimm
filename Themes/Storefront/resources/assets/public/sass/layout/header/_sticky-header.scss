@@ -1,0 +1,36 @@
+.header-wrap-inner {
+    &.sticky {
+        position: fixed;
+        left: 0;
+        top: -200px;
+        right: 0;
+        min-width: 320px;
+        padding: 10px 0;
+        background: $color-white;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+        z-index: 150;
+
+        .row {
+            &.flex-nowrap {
+                align-items: center;
+            }
+        }
+
+        .header-logo {
+            height: 55px;
+
+            svg {
+                height: 55px;
+            }
+        }
+
+        .searched-keywords {
+            display: none;
+        }
+    }
+
+    &.show {
+        top: 0;
+        transition: 600ms ease;
+    }
+}

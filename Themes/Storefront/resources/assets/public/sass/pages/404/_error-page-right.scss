@@ -1,0 +1,24 @@
+.error-page-right {
+    .error-image {
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width: $lg) {
+    .error-page-right {
+        margin-bottom: 43px;
+        text-align: center;
+
+        .error-image {
+            width: 400px;
+        }
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .error-page-right {
+        .error-image {
+            width: 80%;
+        }
+    }
+}

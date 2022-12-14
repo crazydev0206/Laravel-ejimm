@@ -1,0 +1,13 @@
+@import 'order-details/_order-details-top',
+        'order-details/_order-details-middle',
+        'order-details/_order-details-bottom';
+
+.order-details-wrap {
+    margin-top: 50px;
+
+    .section-title {
+        margin-bottom: 34px;
+        padding-bottom: 13px;
+        border-bottom: 1px solid $border-color-lite;
+    }
+}

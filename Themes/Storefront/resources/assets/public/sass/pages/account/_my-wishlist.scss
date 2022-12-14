@@ -1,0 +1,52 @@
+.my-wishlist-table {
+	margin-bottom: 10px;
+
+	tbody {
+		td {
+			&:not(:first-child) {
+				vertical-align: middle;
+			}
+
+			&:nth-child(5) {
+				min-width: 160px;
+			}
+		}
+	}
+
+	.product-image {
+		height: 60px;
+		width: 60px;
+		border-radius: $radius-default;
+        overflow: hidden;
+
+		.image-placeholder {
+			height: 40px;
+			width: 40px;
+		}
+	}
+
+	.product-name {
+        display: inline-block;
+        min-width: 220px;
+		color: $color-black;
+
+		&:hover {
+			color: $color-default;
+            color: var(--color-primary);
+		}
+	}
+
+	.product-price {
+		margin-top: 2px;
+	}
+
+	.badge {
+		margin-top: 1px;
+	}
+
+	.btn-delete {
+		margin-top: 0 !important;
+
+		@extend %account-common-buttons;
+	}
+}

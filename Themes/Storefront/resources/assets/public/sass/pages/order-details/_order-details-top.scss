@@ -1,0 +1,69 @@
+.order-details-top {
+    margin-bottom: 44px;
+}
+
+.order-information {
+    display: inline-block;
+
+    h4 {
+        margin-bottom: 18px;
+    }
+
+    .order-information-list {
+        li {
+            display: flex;
+            margin-bottom: 9px;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+
+        label {
+            font-weight: 500;
+            min-width: 165px;
+            margin-bottom: 0;
+            padding-right: 10px;
+        }
+
+        span {
+            color: $color-gray;
+            word-break: break-all;
+        }
+    }
+}
+
+.order-billing-details,
+.order-shipping-details {
+    h4 {
+        margin-bottom: 18px;
+    }
+
+    address {
+        > span {
+            display: block;
+            margin-bottom: 9px;
+            color: $color-gray;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: $lg) {
+    .order-details-top {
+        margin-bottom: 39px;
+    }
+
+    .order-information {
+        margin-bottom: 38px;
+    }
+}
+
+@media screen and (max-width: $sm) {
+    .order-billing-details {
+        margin-bottom: 33px;
+    }
+}

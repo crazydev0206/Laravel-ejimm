@@ -1,0 +1,11 @@
+.my-profile {
+	padding: 35px 30px 40px;
+}
+
+@media screen and (max-width: 500px) {
+	.my-profile {
+		.btn-save-changes {
+			width: 100%;
+		}
+	}
+}

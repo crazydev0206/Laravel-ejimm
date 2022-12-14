@@ -1,0 +1,120 @@
+.btn {
+    font-family: $primary-font;
+    font-size: 15px;
+    line-height: 26px;
+    position: relative;
+    border: none;
+    padding: 7px 24px;
+    border-radius: $radius-default;
+    transition: $transition-default;
+
+    &:focus {
+        box-shadow: none !important;
+        outline: 0;
+    }
+}
+
+.btn-primary {
+    font-weight: 500;
+    color: $color-white;
+    background: $color-default;
+    background: var(--color-primary);
+
+    &:focus {
+        background: $color-default;
+        background: var(--color-primary);
+    }
+
+    &:active,
+    &:hover,
+    &:active:focus {
+        background: $color-default-hover;
+        background: var(--color-primary-hover);
+    }
+
+    &:not(:disabled):not(.disabled):active,
+    &:not(:disabled):not(.disabled).active {
+        background: $color-default-hover;
+        background: var(--color-primary-hover);
+    }
+    
+    &:disabled,
+    &.disabled,
+    &[disabled] {
+        &:active,
+        &:hover,
+        &:focus,
+        &:hover:focus {
+            background: $color-default;
+            background: var(--color-primary);
+        }
+    }
+}
+
+.btn-default {
+    font-weight: 500;
+    padding: 6px 24px;
+    background: transparent;
+    border: 1px solid $color-default;
+    border: 1px solid var(--color-primary);
+
+    &:active,
+    &:hover,
+    &:active:focus {
+        color: $color-white;
+        background: $color-default;
+        background: var(--color-primary);
+    }
+
+    &.disabled,
+    &[disabled] {
+        &:active,
+        &:hover,
+        &:focus,
+        &:hover:focus {
+            color: $color-black;
+            background: transparent !important;
+
+            &.btn-loading {
+                &:after {
+                    border-color: $color-default;
+                    border-color: var(--color-primary);
+                }
+            }
+        }
+    }
+
+    &.btn-loading {
+        &:after {
+            border-color: $color-default;
+            border-color: var(--color-primary);
+        }
+
+        &:active,
+        &:hover,
+        &:focus,
+        &:hover:focus {
+            &:after {
+                border-color: $color-white;
+            }
+        }
+    }
+}
+
+.btn-lg {
+    margin-top: 5px;
+    padding: 12px 50px;
+}
+
+.btn-remove {
+    font-size: 15px;
+    color: $color-black;
+    background: transparent;
+    border: none;
+    transition: $transition-default;
+
+    &:hover {
+        color: $color-default;
+        color: var(--color-primary);
+    }
+}

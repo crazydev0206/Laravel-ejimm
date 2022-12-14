@@ -1,0 +1,16 @@
+@extends('admin::layout')
+
+@component('admin::components.page.header')
+    @slot('title', trans('admin::resource.create', ['resource' => trans('$LOWERCASE_MODULE_NAME$::$PLURAL_SNAKE_CASE_ENTITY_NAME$.$SNAKE_CASE_ENTITY_NAME$')]))
+
+    <li><a href="{{ route('admin.$PLURAL_SNAKE_CASE_ENTITY_NAME$.index') }}">{{ trans('$LOWERCASE_MODULE_NAME$::$PLURAL_SNAKE_CASE_ENTITY_NAME$.$PLURAL_SNAKE_CASE_ENTITY_NAME$') }}</a></li>
+    <li class="active">{{ trans('admin::resource.create', ['resource' => trans('$LOWERCASE_MODULE_NAME$::$PLURAL_SNAKE_CASE_ENTITY_NAME$.$SNAKE_CASE_ENTITY_NAME$')]) }}</li>
+@endcomponent
+
+@section('content')
+    <form method="POST" action="{{ route('admin.$PLURAL_SNAKE_CASE_ENTITY_NAME$.store') }}" class="form-horizontal" id="$KEBAB_CASE_ENTITY_NAME$-create-form" novalidate>
+        {{ csrf_field() }}
+    </form>
+@endsection
+
+@include('$LOWERCASE_MODULE_NAME$::admin.$PLURAL_SNAKE_CASE_ENTITY_NAME$.partials.shortcuts')

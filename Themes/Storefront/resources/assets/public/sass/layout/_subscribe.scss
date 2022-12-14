@@ -1,0 +1,115 @@
+.subscribe-wrap {
+    margin-top: 50px;
+    background: $color-default;
+    background: var(--color-primary);
+}
+
+.subscribe {
+    display: flex;
+    justify-content: center;
+    padding: 30px 0 25px;
+
+    > .row {
+        width: 100%;
+    }
+
+    .subscribe-text {
+        .title,
+        .sub-title {
+            display: block;
+            color: $color-white;
+        }
+
+        .title {
+            font-size: 30px;
+            font-weight: 500;
+            line-height: 30px;
+        }
+
+        .sub-title {
+            line-height: 24px;
+            margin-top: 10px;
+        }
+    }
+
+    .subscribe-field {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+
+        .form-group {
+            position: relative;
+            margin-bottom: 0;
+
+            > input {
+                height: 50px;
+                width: 450px;
+                border: none;
+                padding: 12px 147px 10px 20px;
+            }
+
+            > .btn-subscribe {
+                font-weight: 400;
+                position: absolute;
+                top: 5px;
+                right: 5px;
+                border-radius: 0 $radius-default $radius-default 0;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    .subscribe {
+        .subscribe-field {
+            .form-group {
+                > input {
+                    width: 400px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: $xl) {
+    .subscribe {
+        .subscribe-field {
+            .form-group {
+                > input {
+                    width: 450px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: $lg) {
+    .subscribe {
+        padding-bottom: 34px;
+
+        .subscribe-text {
+            text-align: center;
+        }
+
+        .subscribe-field {
+            margin-top: 25px;
+            justify-content: center;
+        }
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .subscribe {
+        .subscribe-field {
+            > form {
+                width: 100%;
+            }
+
+            .form-group {
+                > input {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

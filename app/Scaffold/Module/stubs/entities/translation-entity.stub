@@ -1,0 +1,15 @@
+<?php
+
+namespace Modules\$MODULE_NAME$\Entities;
+
+use Modules\Support\Eloquent\TranslationModel;
+
+class $ENTITY_NAME$Translation extends TranslationModel
+{
+    /**
+     * The attributes that are mass assignable.
+     *
+     * @var array
+     */
+    protected $fillable = [];
+}

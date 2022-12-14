@@ -1,0 +1,107 @@
+.footer-top {
+    .title {
+        margin-bottom: 23px;
+    }
+
+    .social-links {
+        margin: 37px 0 0 -8px;
+    }
+}
+
+.footer-links:not(.footer-tags) {
+    .list-inline {
+        li {
+            display: block;
+            margin-bottom: 14px;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+
+            a {
+                display: inline-block;
+                max-width: 100%;
+                color: $color-gray;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                vertical-align: top;
+                transition: $transition-default;
+
+                &:hover {
+                    color: $color-default;
+                    color: var(--color-primary);
+                }
+            }
+        }
+    }
+}
+
+.footer-tags {
+    .title {
+        margin-bottom: 28px;
+    }
+
+    .list-inline {
+        margin-bottom: -7px;
+
+        li {
+            display: inline-block;
+            max-width: 100%;
+            margin: 0 4px 7px 0;
+
+            &:last-child {
+                margin-right: 0;
+            }
+
+            a {
+                line-height: 33px;
+                display: block;
+                color: $color-gray;
+                border: 1px solid $color-gray-lite;
+                border-radius: $radius-default;
+                padding: 0 10px;
+                max-width: 100%;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                vertical-align: top;
+
+                &:hover {
+                    color: $color-default;
+                    color: var(--color-primary);
+                    border-color: $color-default-transparent;
+                    border-color: var(--color-primary-transparent);
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: $lg) {
+    .footer-top {
+        > .row {
+            > div:nth-child(4) {
+                .footer-links {
+                    margin-top: 38px;
+                }
+            }
+        }
+    }
+
+    .footer-tags {
+        margin-top: 38px;
+    }
+}
+
+@media screen and (max-width: $md) {
+    .footer-top {
+        .social-links {
+            margin: 19px 0 -3px -8px;
+        }
+    }
+
+    .footer-links {
+        margin-top: 38px;
+    }
+}

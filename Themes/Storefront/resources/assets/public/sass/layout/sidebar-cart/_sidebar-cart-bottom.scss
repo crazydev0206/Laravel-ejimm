@@ -1,0 +1,28 @@
+.sidebar-cart-bottom {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: $color-white;
+
+    .sidebar-cart-subtotal {
+        display: flex;
+        margin: 0 30px;
+        padding: 25px 0;
+        justify-content: space-between;
+        border-top: 1px solid $border-color-lite;
+
+        > span {
+            font-weight: 500;
+            color: $color-default;
+            color: var(--color-primary);
+        }
+    }
+
+    .sidebar-cart-actions {
+        display: flex;
+        padding: 20px 30px;
+        background: $color-white-lite;
+        justify-content: space-between;
+    }
+}

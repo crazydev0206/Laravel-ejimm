@@ -1,0 +1,22 @@
+<?php
+
+return [
+    /*
+    |--------------------------------------------------------------------------
+    | Define which assets will be available through the asset manager
+    |--------------------------------------------------------------------------
+    | These assets are registered on the asset manager
+    */
+    'all_assets' => [
+        'admin.$LOWERCASE_MODULE$.css' => ['module' => '$LOWERCASE_MODULE$:admin/css/$LOWERCASE_MODULE$.css'],
+        'admin.$LOWERCASE_MODULE$.js' => ['module' => '$LOWERCASE_MODULE$:admin/js/$LOWERCASE_MODULE$.js'],
+    ],
+
+    /*
+    |--------------------------------------------------------------------------
+    | Define which default assets will always be included in your pages
+    | through the asset pipeline
+    |--------------------------------------------------------------------------
+    */
+    'required_assets' => [],
+];

@@ -1,0 +1,5 @@
+.my-downloads-table {
+	.btn-download {
+		@extend %account-common-buttons;
+	}
+}

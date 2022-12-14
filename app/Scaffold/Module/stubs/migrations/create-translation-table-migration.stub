@@ -1,0 +1,35 @@
+<?php
+
+use Illuminate\Support\Facades\Schema;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Database\Migrations\Migration;
+
+class Create$ENTITY_NAME$TranslationsTable extends Migration
+{
+    /**
+     * Run the migrations.
+     *
+     * @return void
+     */
+    public function up()
+    {
+        Schema::create('$SNAKE_CASE_ENTITY_NAME$_translations', function (Blueprint $table) {
+            $table->increments('id');
+            $table->integer('$SNAKE_CASE_ENTITY_NAME$_id')->unsigned();
+            $table->string('locale');
+
+            $table->unique(['$SNAKE_CASE_ENTITY_NAME$_id', 'locale']);
+            $table->foreign('$SNAKE_CASE_ENTITY_NAME$_id')->references('id')->on('$PLURAL_SNAKE_CASE_ENTITY_NAME$')->onDelete('cascade');
+        });
+    }
+
+    /**
+     * Reverse the migrations.
+     *
+     * @return void
+     */
+    public function down()
+    {
+        Schema::dropIfExists('$SNAKE_CASE_ENTITY_NAME$_translations');
+    }
+}

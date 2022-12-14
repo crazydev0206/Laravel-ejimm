@@ -1,0 +1,131 @@
+%nav-link {
+    font-size: 15px;
+    line-height: 26px;
+    position: relative;
+    padding: 13px 3px;
+    color: $color-gray-dark;
+    border: none;
+    border-radius: 0;
+    transition: $transition-default;
+
+    &:before {
+        position: absolute;
+        content: '';
+        left: 50%;
+        bottom: 0;
+        height: 1px;
+        width: 0;
+        background: $color-default;
+        background: var(--color-primary);
+        transform: translateX(-50%);
+        transition: 150ms ease-in-out;
+    }
+
+    &:after {
+        position: absolute;
+        content: '';
+        left: 50%;
+        bottom: -7px;
+        height: 8px;
+        width: 15px;
+        background: $color-default;
+        background: var(--color-primary);
+        border-bottom-left-radius: 12px;
+        border-bottom-right-radius: 12px;
+        opacity: 0;
+        transform: translateX(-50%);
+        transition: 150ms ease-in-out;
+        z-index: 1;
+    }
+
+    &:hover {
+        &:before {
+            width: 40px;
+        }
+    }
+
+    &.active {
+        font-weight: 500;
+        color: $color-default;
+        color: var(--color-primary);
+
+        &:before {
+            width: 100%;
+        }
+
+        &:after {
+            opacity: 1;
+        }
+    }
+
+    &.loading {
+        pointer-events: none;
+
+        &:before {
+            left: 0;
+            top: auto;
+            transform: none;
+            animation: tab-loader 1.2s ease infinite;
+        }
+
+        &:after {
+            content: none;
+        }
+    }
+}
+
+.nav-tabs {
+    border: none;
+
+    .nav-link {
+        @extend %nav-link;
+    }
+}
+
+.tabs:not(.featured-categories-tabs) {
+    list-style: none;
+    margin-bottom: -1px;
+
+    .tab-item {
+        @extend %nav-link;
+
+        float: left;
+        margin-left: 30px;
+        cursor: pointer;
+        transition: none;
+
+        &:first-child {
+            margin-left: 0;
+        }
+
+        &.active {
+            cursor: default;
+        }
+    }
+}
+
+.tab-content {
+    .slick-list {
+        margin: 0 -15px -50px;
+        padding: 30px 0 50px;
+
+        .slick-track {
+            display: flex;
+            align-items: stretch;
+        }
+    }
+
+    .slick-dots {
+        position: relative;
+        bottom: auto;
+        margin-top: 30px;
+    }
+}
+
+@media screen and (max-width: $lg) {
+    .tab-content {
+        .slick-list {
+            margin: 0 -8px -50px;
+        }
+    }
+}

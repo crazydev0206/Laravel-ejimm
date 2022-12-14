@@ -1,0 +1,28 @@
+.order-details-bottom {
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+
+    .order-summary-list {
+        width: 300px;
+
+        .price-amount {
+            font-weight: 500;
+        }
+    }
+
+    .order-summary-total {
+        width: 300px;
+        margin-top: 24px;
+        padding-bottom: 0;
+    }
+}
+
+@media screen and (max-width: 340px) {
+    .order-details-bottom {
+        .order-summary-list,
+        .order-summary-total {
+            width: 100%;
+        }
+    }
+}

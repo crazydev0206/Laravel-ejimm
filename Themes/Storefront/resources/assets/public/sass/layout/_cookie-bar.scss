@@ -1,0 +1,54 @@
+.cookie-bar-wrap {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: -200px;
+    background: #3b4045;
+    box-shadow: 0 -1px 3px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(0);
+    z-index: 50;
+    transition: 600ms ease;
+
+    &.show {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(-200px);
+    }
+}
+
+.cookie-bar {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 0;
+
+    .cookie-bar-text {
+        font-size: 14px;
+        margin-right: 100px;
+        color: $color-white-dark;
+    }
+
+    .cookie-bar-action {
+        display: flex;
+        white-space: nowrap;
+
+        .btn-accept {
+            padding: 5px 24px;
+        }
+    }
+}
+
+@media screen and (max-width: $lg) {
+    .cookie-bar {
+        flex-direction: column;
+        padding: 16px 0 20px;
+
+        .cookie-bar-text {
+            margin: 0 0 14px 0;
+            text-align: center;
+        }
+    }
+}

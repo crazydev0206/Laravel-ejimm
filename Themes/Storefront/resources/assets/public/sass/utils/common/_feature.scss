@@ -1,0 +1,24 @@
+.single-feature {
+    display: flex;
+    justify-content: center;
+
+    .feature-icon {
+        margin-right: 13px;
+
+        > i {
+            font-size: 36px;
+            color: $color-default;
+            color: var(--color-primary);
+        }
+    }
+
+    .feature-details {
+        > span {
+            font-size: 14px;
+            line-height: 22px;
+            display: block;
+            color: $color-gray;
+            margin-top: 2px;
+        }
+    }
+}

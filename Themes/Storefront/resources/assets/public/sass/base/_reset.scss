@@ -1,0 +1,93 @@
+html {
+    font-family: $primary-font;
+}
+
+body {
+    direction: ltr;
+    font-family: $primary-font;
+    font-size: 15px;
+    font-weight: 400;
+    font-style: normal;
+    min-width: 320px;
+    color: $color-black;
+    overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: $color-black;
+}
+
+h1, h2, h3, h4, h5, h6,
+ul, ol, li, address, p {
+    margin: 0;
+    padding: 0;
+}
+
+div, a, button {
+    &:active, &:focus, &:visited {
+        outline: 0;
+    }
+}
+
+a {
+    transition: $transition-default;
+
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+b, strong {
+    font-weight: 500;
+}
+
+.tooltip {
+    pointer-events: none;
+
+    > .tooltip-inner {
+        font-size: 12px;
+        padding: 4px 8px;
+        border-radius: $radius-default;
+    }
+}
+
+.container {
+    padding-left: 4.5%;
+    padding-right: 4.5%;
+}
+
+@media screen and (min-width: 1920px) {
+    .container {
+        max-width: 1770px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+
+@media screen and (min-width: 2200px) {
+    .container {
+        max-width: 1920px;
+    }
+}
+
+@media screen and (max-width: 1920px) {
+    .container {
+        max-width: 100%;
+        padding-left: 4%;
+        padding-right: 4%;
+    }
+}
+
+@media screen and (max-width: 1500px) {
+    .container {
+        padding-left: 1.5%;
+        padding-right: 1.5%;
+    }
+}
+
+@media screen and (max-width: $lg) {
+    .container {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}

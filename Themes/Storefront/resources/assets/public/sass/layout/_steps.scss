@@ -1,0 +1,103 @@
+.steps-wrap {
+    margin-bottom: 40px;
+}
+
+.step-tabs {
+    display: flex;
+    justify-content: center;
+
+    .step-tab {
+        font-size: 18px;
+        font-weight: 500;
+        height: 60px;
+        width: 350px;
+        display: flex;
+        margin: 0 15px;
+        justify-content: center;
+        align-items: center;
+        color: $color-black;
+        text-align: center;
+        background: $color-white;
+        border: 1px solid $color-gray-lite;
+        border-radius: $radius-default;
+        white-space: nowrap;
+        cursor: default;
+
+        &.active {
+            color: $color-white;
+            background: $color-default;
+            background: var(--color-primary);
+            border-color: $color-default;
+            border-color: var(--color-primary);
+
+            .step-tab-text {
+                .bg-text {
+                    color: $color-white;
+                }
+            }
+        }
+    }
+
+    .step-tab-link {
+        display: flex;
+        width: 100%;
+        color: $color-black;
+        justify-content: center;
+        align-self: stretch;
+        align-items: center;
+    }
+
+    .step-tab-text {
+        position: relative;
+
+        .bg-text {
+            font-size: 45px;
+            position: absolute;
+            top: 50%;
+            right: -35px;
+            width: 50px;
+            color: $color-black;
+            opacity: 0.15;
+            transform: translateY(-50%);
+        }
+    }
+}
+
+@media screen and (max-width: $lg) {
+    .steps-wrap {
+        display: none;
+    }
+
+    .step-tabs {
+        .step-tab {
+            font-size: 16px;
+            height: 50px;
+            width: 250px;
+        }
+
+        .step-tab-text {
+            .bg-text {
+                font-size: 36px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 886px) {
+    .step-tabs {
+        align-items: center;
+        flex-direction: column;
+
+        .step-tab {
+            margin: 8px 15px;
+
+            &:first-child {
+                margin-top: 0;
+            }
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+}

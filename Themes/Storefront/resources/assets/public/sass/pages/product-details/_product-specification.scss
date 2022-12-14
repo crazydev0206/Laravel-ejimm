@@ -1,0 +1,57 @@
+.specification {
+	padding-top: 51px;
+
+	.specification-inner {
+		border: 1px solid $color-gray-lite;
+		border-radius: $radius-default;
+	}
+
+	.title {
+		padding: 15px 30px;
+		background: $color-white-dark;
+	}
+}
+
+.specification-list {
+	padding: 35px 30px 34px 30px;
+
+	li {
+		display: flex;
+		margin-bottom: 18px;
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+
+	label {
+		font-weight: 500;
+		line-height: 23px;
+		width: 190px;
+		min-width: 190px;
+		margin-bottom: 0;
+	}
+
+	span {
+		line-height: 23px;
+		color: $color-gray;
+	}
+}
+
+@media screen and (max-width: $lg) {
+	.specification {
+		padding: 41px 0 15px;
+	}
+}
+
+@media screen and (max-width: $md) {
+	.specification-list {
+		li {
+			flex-direction: column;
+		}
+
+		label {
+			margin-bottom: 3px;
+		}
+	}
+}

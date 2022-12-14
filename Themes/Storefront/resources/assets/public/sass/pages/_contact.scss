@@ -1,0 +1,153 @@
+.contact-wrap {
+	margin: 90px 0;
+
+	.map-canvas {
+		position: relative;
+		height: 0;
+		padding-bottom: 34%;
+		overflow: hidden;
+		border-radius: $radius-default;
+
+		> iframe {
+			position: absolute;
+			left: 0;
+			top: 0;
+			height: 100%;
+			width: 100%;
+		}
+	}
+}
+
+.contact-form-wrap {
+    display: flex;
+	margin-top: -12%;
+    justify-content: center;
+
+	.contact-form-inner {
+		display: flex;
+		width: 1000px;
+		box-shadow: 0px 5px 28.5px 1.5px rgba(9, 6, 24, 0.1);
+		overflow: hidden;
+		border-radius: 6px;
+	}
+}
+
+.contact-form-left {
+    position: relative;
+    width: 350px;
+    min-width: 350px;
+    padding: 44px 60px 44px;
+    background: $color-default;
+    background: var(--color-primary);
+    overflow: hidden;
+
+    .title {
+        margin-bottom: 48px;
+        color: $color-white;
+    }
+
+    .contact-info {
+        li {
+            color: $color-white;
+            margin-bottom: 29px;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+
+            i {
+                color: $color-white !important;
+            }
+        }
+    }
+
+    .social-links {
+        margin: 45px 0 0 -8px;
+
+        li {
+            a {
+                color: $color-white;
+
+                &:hover {
+                    color: $color-white;
+                    opacity: 0.6;
+                }
+            }
+        }
+    }
+
+    > svg {
+        position: absolute;
+        right: -35px;
+        bottom: -45px;
+        height: 180px;
+        width: 180px;
+        opacity: 0.15;
+        transform: rotate(-15deg);
+    }
+}
+
+.contact-form-right {
+    width: 100%;
+    padding: 44px 60px 50px;
+    background: $color-white;
+    overflow: hidden;
+    z-index: 1;
+
+    .title {
+        margin-bottom: 48px;
+    }
+}
+
+@media screen and (max-width: $lg) {
+    .contact-wrap {
+        margin: 70px 0;
+    }
+}
+
+@media screen and (max-width: 1080px) {
+	.contact-form-wrap {
+		.contact-form-inner {
+			width: 90%;
+			flex-direction: column;
+		}
+	}
+
+    .contact-form-left {
+        width: 100%;
+        min-width: 0;
+        padding: 34px 30px 34px;
+
+        .title {
+            margin-bottom: 38px;
+        }
+
+        .contact-info {
+            li {
+                margin-bottom: 19px;
+            }
+        }
+
+        .social-links {
+            margin: 35px 0 -4px -8px;
+        }
+    }
+
+    .contact-form-right {
+        padding: 34px 30px 40px;
+
+        .title {
+            margin-bottom: 38px;
+        }
+    }
+}
+
+@media screen and (max-width: $sm) {
+	.contact-form-wrap {
+		margin-top: 30px;
+
+        .contact-form-inner {
+            width: 100%;
+        }
+	}
+}
